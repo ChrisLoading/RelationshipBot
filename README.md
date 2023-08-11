@@ -1,3 +1,3 @@
-# Relationship_bot
+# RelationshipBot
 
 ### author: brian098091

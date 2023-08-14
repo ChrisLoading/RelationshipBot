@@ -1,0 +1,3966 @@
+{
+    "language": "zh-tw",
+    "type": "basic",
+    "version": {
+        "atk": "v265",
+        "intent": "1.0"
+    },
+    "user_defined": {},
+    "utterance": {
+        "我被戴綠帽了": {
+            "id": "914bd28b-cbaf-4072-8967-9824df1ce899",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_lightVerb",
+                    "text": "被",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "戴綠帽",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "了",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "同時跟我在一起": {
+            "id": "7993c5d5-00dc-44a8-8bf2-8190e413d46e",
+            "argument": [
+                {
+                    "pos": "TIME_justtime",
+                    "text": "同時",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "一起",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
+        },
+        "男友腳踏兩條船": {
+            "id": "d1e56240-d478-445f-b1f0-df2a851d3663",
+            "argument": [
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "男友腳",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "踏足",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏進",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "攀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想爬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "碰",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "用身",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏進了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剛升",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剛踏",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "踏進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "踏",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_classifier",
+                    "text": "兩條",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "船",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "一夜情算不算出軌": {
+            "id": "0d8af8e7-c899-4eaa-a388-e1f6282129c5",
+            "argument": [
+                {
+                    "pos": "TIME_day",
+                    "text": "一夜",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "情",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "算不算",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "脫軌",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "出走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "撤出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "早退",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "溜走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "漏掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺忘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺棄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺落",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開溜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "間隔",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "闖蕩",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發生出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自摔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追撞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爆胎",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "翻車",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "翻覆",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "摔車",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相撞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞車",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "出軌",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "偷偷下載交友軟體": {
+            "id": "cde675a0-fc20-40e6-ba5a-fd5a4b902a8c",
+            "argument": [
+                {
+                    "pos": "MODIFIER",
+                    "text": "偷偷",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "瀏覽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂閱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "預購",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "登入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "串流",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "配信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加載",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試玩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存檔",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "下載",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "聊天",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "曖昧",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷窺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "寫手",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賭博",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交往",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相親",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽賭",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "賣淫",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "交友",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "軟體",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "出軌跟健身教練玩": {
+            "id": "a3858cda-d0e3-46d3-9ce8-cbbe21d0aa49",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "脫軌",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "出走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "撤出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "早退",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "溜走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "漏掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺忘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺棄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺落",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開溜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "間隔",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "闖蕩",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發生出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "自摔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "追撞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爆胎",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "翻車",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "翻覆",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "摔車",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相撞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞車",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "出軌",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "運動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "瘦身",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按摩",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "水療",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "休閒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "紓壓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "美容",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "慢跑",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "減重",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舒壓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "溜冰",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "健身",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "教練",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "玩忽",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩狎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "散步",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "買東西",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩耍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打電動",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩水",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩樂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遊玩",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "玩",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "前陣子被男友劈腿": {
+            "id": "1a92b478-4615-4a0c-aadc-ff8f6fabf164",
+            "argument": [
+                {
+                    "pos": "TIME_justtime",
+                    "text": "前陣子",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_lightVerb",
+                    "text": "被",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調戲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "強吻",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞見",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞臉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "非禮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勾引",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逃婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "害死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "劈腿",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "她因為無聊出軌了": {
+            "id": "bedef088-6e05-45d1-9fc5-f89c8942834b",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "她",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inter",
+                    "text": "因為",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "無聊",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "脫軌",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "出走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "分離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "撤出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "早退",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "溜走",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "漏掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走掉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "走開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺忘",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺棄",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遺落",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開溜",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "間隔",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "闖蕩",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離去",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "離開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "駛離",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祀り",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "創玩",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "出軌了",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "已經原諒過他一次了": {
+            "id": "8970217f-b1bc-4c82-b1d0-7d1ebbc8b1f6",
+            "argument": [
+                {
+                    "pos": "ASPECT",
+                    "text": "已經",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "寬饒",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "饒過",
+                            "level": "tier_2",
+                            "checked": false
+                        }
+                    ],
+                    "text": "原諒過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_eventQuantifier",
+                    "text": "一次",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "了",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "已經給過他一次機會了": {
+            "id": "e0217d57-8dd0-4a5a-b50f-fdd3b97210d7",
+            "argument": [
+                {
+                    "pos": "ASPECT",
+                    "text": "已經",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "問過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷疑過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "告訴過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看到過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "找過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遇過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "殺過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喜歡過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "問",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷疑",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "告訴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "找",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "殺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喜歡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "給過",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_eventQuantifier",
+                    "text": "一次",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "機會",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "了",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "我對他有一些不信任感": {
+            "id": "c8469064-da9f-486a-8bef-95a0284e7c7c",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "對",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "具有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "帶有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "持有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有了",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "有著",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "保留",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "存在",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "有",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_classifier",
+                    "text": "一些",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "信任感",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "發現女友跟別人劈腿了": {
+            "id": "2f9435d4-62a3-482b-bc0d-b1d6cabfaf95",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "察覺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尋獲",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "感覺到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "望見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "注意到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "發覺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "看出",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "點播",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "得知",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看見",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發現了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "查出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "驚覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "找到",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "發現",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "女友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "別",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調戲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "強吻",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞見",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞臉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "非禮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勾引",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逃婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "害死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "劈腿",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ASPECT",
+                    "text": "了",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "男友很愛跟其他女生搞曖昧": {
+            "id": "0518cc55-3b9b-44ba-a95d-2b8ef6c629e0",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "很",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "喜愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛好",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛憎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛戴",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛過",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "憐愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "深愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "熱愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "疼愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "相愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "篤愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "給愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "建愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勒愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迷戀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "集愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "視愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喜歡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有愛",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "愛",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "其他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "女生",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "亂搞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搞出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搞得",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吵",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搞到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搞成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幹了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "得做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "幹",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "搞",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "含混",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "疏離",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛戀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "熱戀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "真做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "親暱",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "外遇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛慕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交往",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "曖昧",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "男友很愛跟前女友藕斷絲連": {
+            "id": "9c41910c-5e28-4fce-8604-e1fbad3c239f",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "很",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "喜愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛好",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛憎",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛戴",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛護",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛過",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "憐愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "深愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "熱愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "疼愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "相愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "篤愛",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "給愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "建愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勒愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "迷戀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "集愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "視愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "喜歡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有愛",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "愛",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "前女友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "IDIOM",
+                    "text": "藕斷絲連",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "對方還留著前任的物品該怎麼辦": {
+            "id": "10151348-21af-47a2-b37e-45827c1bfb92",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "還",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "綁著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剪了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "紮著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "捲髮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "戴了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "披著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搭襯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "露出了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剃了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "綁",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剪",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "紮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "戴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "披",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "露出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "佩戴",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "留著",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "前",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "任副",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "出任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "任過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "後任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "任總",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "改任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復任",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調任",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "任",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "物品",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "籌辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "承辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "舉辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主辦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦副",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "辦理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合辦",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "辦",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "我對他的信任可以說是完全破滅": {
+            "id": "c2b687de-a595-4d19-b244-dc48693779f3",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "對",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "信託",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "信賴",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "信靠",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "憑信",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "委託",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "尊敬",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛戴",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "敵視",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "憎恨",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "尊重",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "敬重",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "諒解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "同情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認同",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "信任",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "可以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "演說",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "說話",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "宣判",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "拼讀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "談到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "辯護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "說真",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講出",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "說過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "說到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常說",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "說著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "說了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "罵",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "說",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "完全",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "幻滅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "破滅了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "落空",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "崩毀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "崩壞",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "消逝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "覺醒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "毀滅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "崩解",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "滅亡",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "破滅",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "開始懷疑我是不是以工作為名外遇": {
+            "id": "1e944030-19c4-455b-aa6b-af40c0bb4da2",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "啟用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開創",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開始了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "心懷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷恨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猶疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "疑心",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "質疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "遲疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "估摸",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "動搖",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "包藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "庇護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "怨恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱怨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推敲",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搖擺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "料度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "料想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "暗想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "測度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "游移",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "窩藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "臆測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "覺得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "設想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "試想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "隱藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "飲恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "厭惡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔憂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "誤認",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "以為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "認為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔心",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "懷疑",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是不是",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "以",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "勞動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "賣笑",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "運轉",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "工作過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "工作了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "待業",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "休假",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打工",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "在職",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拍戲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "服役",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "兼職",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "加班",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "工作",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "為",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "名",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "姦情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "劈腿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "曖昧",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "通姦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "同居",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相戀",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吵架",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛慕",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "亂倫",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "外遇",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "開始懷疑我是不是變心了才不想被碰": {
+            "id": "143f6960-524a-4e54-b97d-b1797a96e963",
+            "argument": [
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "啟用",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "開創",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "停止",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "結束",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "展開",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開始了",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "開始",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "心懷",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷恨",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷有",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猶疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "疑心",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "質疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "遲疑",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "估摸",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "動搖",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "包藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "存有",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "庇護",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "怨恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "打量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱怨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱持",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推敲",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "推測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搖擺",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "攜帶",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "料度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "料想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "暗想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "測度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "游移",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜度",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "窩藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "臆測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "覺得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "設想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "試想",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "隱藏",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "飲恨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "認為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔心",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "厭惡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "以為",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "誤認",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擔憂",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "懷疑",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_AnotAQ",
+                    "text": "是不是",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [],
+                    "text": "變心了",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODAL",
+                    "text": "才",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "假想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "冥想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "回想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想像",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想出",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想念",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想拿",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想望",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想要",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想買",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "想起",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "料想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "暗想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "預想",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "企盼",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "假設",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "希望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "思念",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "思考",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "感到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "懷念",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "掂量",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "揣測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "期冀",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "猜測",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祈望",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祈願",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "祝願",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "自認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "覺得",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "需要",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "願",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願意",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "要",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "試",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "想",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_lightVerb",
+                    "text": "被",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "碰到",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "碰見",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "碰面",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "會合",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相聚",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相逢",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相遇",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遇到",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "遇見",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "輸給",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "扯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "演搶",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "更遇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "剛升",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "正遇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "盯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "強碰",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "碰",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "我不在的時候都是另一個女孩在他身邊": {
+            "id": "083bcdbf-fc6f-4120-977c-d7b6dfc44e83",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "時候",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "AUX",
+                    "text": "是",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "另",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_classifier",
+                    "text": "一個",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "女孩",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "在",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "身",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "邊",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
+        },
+        "他除了劈腿以外其他條件都符合我的擇偶標準": {
+            "id": "ebc7078c-fcca-4eec-af41-f0adc58ef296",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "除了",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "VerbP",
+                    "lexy": [
+                        {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調戲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "強吻",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞見",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撞臉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "非禮",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "勾引",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逃婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "害死",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "甩",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "劈腿",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "以外",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "其他",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "條件",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "QUANTIFIER",
+                    "text": "都",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "切合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "合意",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "吻合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "整合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "相符",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "適合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "配合",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "一致",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "匹配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "協調",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "批准",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "搭配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相稱",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "相配",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "簽訂",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌辦",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "違背",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "符",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "依據",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "依照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遵守",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "具備",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遵從",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "按照",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遵循",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "符合",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "我",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "擇偶",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "標準",
+                    "checked": true,
+                    "checkbox": false
+                }
+            ]
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}

@@ -5,31 +5,8 @@
         "atk": "v265",
         "intent": "1.0"
     },
-    "user_defined": null,
+    "user_defined": {},
     "utterance": {
-        "沒房沒車": {
-            "id": "016c259d-fe84-47b3-9398-21bdb53a0ed9",
-            "argument": [
-                {
-                    "pos": "MODIFIER",
-                    "text": "沒房",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_negation",
-                    "text": "沒",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "車",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "他哪來的錢": {
             "id": "2479e657-48d5-4bd0-9049-3b7970e788b6",
             "argument": [
@@ -79,108 +56,6 @@
                     "text": "經費",
                     "checked": true,
                     "checkbox": true
-                }
-            ]
-        },
-        "月入2萬出頭": {
-            "id": "1f9cb188-ca9e-483f-8c5f-ad19251dfcbe",
-            "argument": [
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "似射",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "卡γ",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "月入",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_num",
-                    "text": "2萬",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "出頭歲",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "翻身",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "籌到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "贏過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "開竅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "花掉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "活到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瘦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "搶到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "胖了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "贏",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瘦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "胖",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "出頭",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
@@ -325,6 +200,35 @@
                     "pos": "ENTITY_nouny",
                     "text": "房租",
                     "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "對方沒房沒車": {
+            "id": "69677413-0ee9-4ced-9547-54a4390fbd9a",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "沒房",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "沒",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "車",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -684,99 +588,6 @@
                 }
             ]
         },
-        "常常偷家裡的錢": {
-            "id": "f7dfca23-4f78-4404-a231-97a214e55968",
-            "argument": [
-                {
-                    "pos": "TIME_justtime",
-                    "text": "常常",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "偷竊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷走",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷吃",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "竊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷取",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拿走",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷拿",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "偷盜",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "行竊",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "偷",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "家",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "RANGE_locality",
-                    "text": "裡",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "錢",
-                    "checked": true,
-                    "checkbox": true
-                }
-            ]
-        },
         "經濟條件很普通": {
             "id": "200251c8-e222-49ee-a73b-09817293a987",
             "argument": [
@@ -791,6 +602,160 @@
                     "text": "很普通",
                     "checked": false,
                     "checkbox": true
+                }
+            ]
+        },
+        "對方月入2萬出頭": {
+            "id": "7243634c-f6b1-452b-bca6-4d53ab1ea326",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "月",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "入了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "總入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入處",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "進入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "攻入",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "誇下",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "入進",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "入",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_num",
+                    "text": "2萬",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "出頭歲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "翻身",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "籌到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "開竅",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "花掉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "活到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "瘦了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "搶到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "胖了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贏",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "瘦",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "胖",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "出頭",
+                    "checked": false,
+                    "checkbox": false
                 }
             ]
         },
@@ -1904,6 +1869,105 @@
                     "pos": "ENTITY_nouny",
                     "text": "錢包",
                     "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "男友常常偷家裡的錢": {
+            "id": "528db30c-0827-4ab4-8d80-dfd4de00de78",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "TIME_justtime",
+                    "text": "常常",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "偷竊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷走",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "竊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷取",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拿走",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷拿",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "偷盜",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "行竊",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "偷",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "家",
+                    "checked": false,
+                    "checkbox": true
+                },
+                {
+                    "pos": "RANGE_locality",
+                    "text": "裡",
+                    "checked": true,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "錢",
+                    "checked": false,
                     "checkbox": true
                 }
             ]
@@ -4168,6 +4232,18 @@
         }
     },
     "alias": {},
-    "prompt": {},
-    "document": []
+    "prompt": {
+        "user": "請擬定 3 個回覆「{{UTTERANCE}}」的句子。",
+        "system": "您是一個繁體中文的感情助理。",
+        "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+    },
+    "document": [
+        {
+            "title": "因為經濟問題想提分手會很壞嗎？",
+            "content": {
+                "A": "妳覺得他這樣不妥，反應是必要的。但不是忍到想分手了才反應。\n如果他毫無反應，繼續樂天。妳可以告訴他欠缺危機意識，從來沒有真正花心思去思考，妳會失望甚至分手的。",
+                "Q": "因為經濟問題想提分手會很壞嗎？"
+            }
+        }
+    ]
 }

@@ -5,7 +5,32 @@
         "atk": "v265",
         "intent": "1.0"
     },
-    "user_defined": null,
+    "user_defined": {
+        "term": [
+            "對方"
+        ],
+        "term2": [
+            "另一半"
+        ],
+        "term3": [
+            "生活習慣"
+        ],
+        "term4": [
+            "三更半夜"
+        ],
+        "term5": [
+            "老媽子"
+        ],
+        "term6": [
+            "煩人"
+        ],
+        "term7": [
+            "同步"
+        ],
+        "term8": [
+            "外縣市"
+        ]
+    },
     "utterance": {
         "作息不一致": {
             "id": "8cc8ae81-1dde-44aa-95e7-87ebaf920edc",
@@ -13,7 +38,7 @@
                 {
                     "pos": "ENTITY_oov",
                     "text": "作息",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -54,12 +79,12 @@
             ]
         },
         "我男友超髒的": {
-            "id": "1953cc49-f38b-418a-b58b-920f7ff54ea7",
+            "id": "ed30047b-325f-4352-9837-661bf2ceb755",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -71,7 +96,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "超髒",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -125,7 +150,7 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -135,12 +160,12 @@
                             "checked": false
                         },
                         {
-                            "text": "更要",
+                            "text": "需",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "要去",
+                            "text": "更要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -150,12 +175,12 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
+                            "text": "要去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -318,26 +343,6 @@
                             "checked": false
                         },
                         {
-                            "text": "逛街",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "玩耍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "調情",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "打招呼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "談心",
                             "level": "word2vec",
                             "checked": false
@@ -348,7 +353,27 @@
                             "checked": false
                         },
                         {
+                            "text": "逛街",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "調情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩耍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "吃飯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打招呼",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -505,58 +530,25 @@
             ]
         },
         "我男友生活習慣很差": {
-            "id": "90ea2358-09d6-4035-bbe4-5bc28e62b180",
+            "id": "3763c989-f428-43ff-8250-4b4c9dda89e7",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "ENTITY_noun",
                     "text": "男友",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "生活",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "適合",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "作息",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "喜歡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "傾向",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "習慣了",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "習慣",
                     "checked": false,
-                    "checkbox": false
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "生活習慣",
+                    "checked": false,
+                    "checkbox": true
                 },
                 {
                     "pos": "DegreeP",
@@ -729,21 +721,6 @@
                             "checked": false
                         },
                         {
-                            "text": "撿拾",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "弄髒",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "扔掉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "焚燒",
                             "level": "word2vec",
                             "checked": false
@@ -759,12 +736,27 @@
                             "checked": false
                         },
                         {
-                            "text": "撿",
+                            "text": "扔掉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "弄髒",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撿拾",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "亂拋",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "撿",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -828,32 +820,7 @@
                             "checked": false
                         },
                         {
-                            "text": "午睡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "洗澡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "玩耍",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "打瞌睡",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "進餐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "吃東西",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -863,7 +830,12 @@
                             "checked": false
                         },
                         {
-                            "text": "睡著",
+                            "text": "洗澡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "打瞌睡",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -873,7 +845,27 @@
                             "checked": false
                         },
                         {
+                            "text": "午睡",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "玩耍",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "吃飯",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "睡著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "吃東西",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -972,7 +964,7 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "步調",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2270,13 +2262,13 @@
                 {
                     "pos": "DegreeP",
                     "text": "很多",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "餐點",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -2326,6 +2318,11 @@
                             "checked": false
                         },
                         {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "煮",
                             "level": "word2vec",
                             "checked": false
@@ -2336,17 +2333,7 @@
                             "checked": false
                         },
                         {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "喝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2361,7 +2348,12 @@
                             "checked": false
                         },
                         {
-                            "text": "吃過",
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2371,7 +2363,7 @@
                             "checked": false
                         },
                         {
-                            "text": "想吃",
+                            "text": "吃過",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2455,7 +2447,7 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2465,12 +2457,12 @@
                             "checked": false
                         },
                         {
-                            "text": "更要",
+                            "text": "需",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "要去",
+                            "text": "更要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2480,12 +2472,12 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
+                            "text": "要去",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2533,32 +2525,12 @@
                             "checked": false
                         },
                         {
-                            "text": "請假",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "雇主",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "輪班",
+                            "text": "補休",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "休假",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "補眠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "排班",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2573,12 +2545,32 @@
                             "checked": false
                         },
                         {
-                            "text": "補休",
+                            "text": "請假",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "排班",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "補課",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "輪班",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "補眠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "雇主",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2756,12 +2748,7 @@
                             "checked": false
                         },
                         {
-                            "text": "過來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回老家",
+                            "text": "回國",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2771,12 +2758,7 @@
                             "checked": false
                         },
                         {
-                            "text": "回來了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "回家",
+                            "text": "過來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2786,12 +2768,22 @@
                             "checked": false
                         },
                         {
-                            "text": "回國",
+                            "text": "回家",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "趕來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回老家",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "回來了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2830,7 +2822,7 @@
                             "checked": false
                         },
                         {
-                            "text": "死板",
+                            "text": "強調了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2840,7 +2832,17 @@
                             "checked": false
                         },
                         {
-                            "text": "熱衷",
+                            "text": "講究",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "死板",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "著重",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2850,17 +2852,7 @@
                             "checked": false
                         },
                         {
-                            "text": "講究",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看重",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "強調了",
+                            "text": "熱衷",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2870,7 +2862,7 @@
                             "checked": false
                         },
                         {
-                            "text": "著重",
+                            "text": "看重",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2937,6 +2929,11 @@
                             "checked": false
                         },
                         {
+                            "text": "吃著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "煮",
                             "level": "word2vec",
                             "checked": false
@@ -2947,17 +2944,7 @@
                             "checked": false
                         },
                         {
-                            "text": "吃著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "喝",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "常吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2972,7 +2959,12 @@
                             "checked": false
                         },
                         {
-                            "text": "吃過",
+                            "text": "常吃",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想吃",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2982,7 +2974,7 @@
                             "checked": false
                         },
                         {
-                            "text": "想吃",
+                            "text": "吃過",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2999,13 +2991,13 @@
                 }
             ]
         },
-        "我習慣早起，男友都要三經半夜才睡": {
-            "id": "00a3c6f0-5814-488e-b5d4-4f8a2f9d0b75",
+        "我習慣早起，男友都要三更半夜才睡": {
+            "id": "d82489bf-90a6-4267-b337-360fbc8756a4",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -3196,84 +3188,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_num",
-                    "text": "三",
-                    "checked": false,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "經受",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "經歷",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "後經",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經總",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經此",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經第",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經由",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經荔",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經呈",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經專家",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "經富",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "經",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "TIME_day",
-                    "text": "半夜",
+                    "pos": "UserDefined",
+                    "text": "三更半夜",
                     "checked": true,
-                    "checkbox": false
+                    "checkbox": true
                 },
                 {
                     "pos": "FUNC_inner",
@@ -3392,7 +3310,7 @@
             ]
         },
         "跟男友不同縣市工作生活作息不同步": {
-            "id": "695eee4d-084b-44fd-be59-e470697e546f",
+            "id": "f1f75c88-d5e4-4693-96be-644ac5d9f39c",
             "argument": [
                 {
                     "pos": "FUNC_conjunction",
@@ -3409,13 +3327,13 @@
                 {
                     "pos": "MODIFIER",
                     "text": "不同",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "縣市",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
@@ -3494,19 +3412,19 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "生活作息",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
-                    "pos": "MODIFIER",
-                    "text": "不同",
-                    "checked": true,
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "步",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "同步",
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -3733,22 +3651,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相信",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起來",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3758,12 +3661,27 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "以為",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3884,17 +3802,7 @@
                             "checked": false
                         },
                         {
-                            "text": "講出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "亂講",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "說話",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3904,12 +3812,7 @@
                             "checked": false
                         },
                         {
-                            "text": "聽得懂",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "講了",
+                            "text": "說話",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3919,12 +3822,27 @@
                             "checked": false
                         },
                         {
-                            "text": "說著",
+                            "text": "講了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "說了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽得懂",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "說著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講出",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3973,6 +3891,40 @@
         }
     },
     "alias": {},
-    "prompt": {},
-    "document": []
+    "prompt": {
+        "user": "請擬定 3 個回覆「{{UTTERANCE}}」的句子。",
+        "system": "您是一個繁體中文的感情助理。",
+        "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+    },
+    "document": [
+        {
+            "title": "遠距離",
+            "content": {
+                "A": "與其每一天都在煩惱著距離的考驗、相處機會少的考驗，然後慢慢耗盡彼此的感情熱度，最後走上分手一途再來怨天尤人早知道早點分一分算了，浪費彼此那麼多時間。將每一天都用來好好的珍惜彼此，然後日復一日；每一天都感到幸福且滿足，就算最後真的分開了至少每一天都是開心的，不好嗎？\n\n何況，未來會如何根本沒有人能夠預測，只有自己已經有了不想繼續交往這樣的想法，才會將距離看成分手的開端，然後開始腦補各種因為距離而分手的劇情。\n\n若下定了決心不論如何都要繼續走下去，就一定能夠克服所有問題。\n\n信任彼此、把握當下，就是維繫感情的方式，與距離無關。",
+                "Q": "我和另一半是遠距離情侶",
+                "Q1": "一直都遠距離不知道該怎麼辦",
+                "Q2": "",
+                "Q3": ""
+            }
+        },
+        {
+            "title": "作息",
+            "content": {
+                "A": "建議您，請和您的伴侶共同討論出好的解決方案，才能達成同時滿意的解決關係。作息不一致的伴侶一定要在其他時間培養感情，比如在早上或在先睡覺的人入睡前的半小時，甚至可以在週末。",
+                "Q1": "我和另一半作息不一致",
+                "Q2": "我習慣早起，男友都要三更半夜才睡",
+                "Q3": "跟男友不同縣市工作生活作息不同步"
+            }
+        },
+        {
+            "title": "獨處的時間和空間",
+            "content": {
+                "A": "外向者通常比較多話，當內向的另一半在表達自己內心的想法或心事時，很常有打斷另一半說話，或急於給一堆建議的狀況，久而久之，覺得自己沒有被理解的內向者會越來越不想分享自己內心的想法，兩個人的心也因此漸行漸遠。建議您坦承和伴侶溝通，很多時候需要獨處的時間，單純想自己做自己的事而已。若您不積極溝通很可能讓伴侶以為您的冷淡是因為您不夠愛自己，或是自己做錯了什麼而惹您不開心了。",
+                "Q": "",
+                "Q1": "下班回家只想一個人靜靜",
+                "Q2": "覺得每天至少一次講電話或視訊很沒有必要",
+                "Q3": ""
+            }
+        }
+    ]
 }

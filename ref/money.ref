@@ -5023,7 +5023,7 @@
     "prompt": {
         "user": "請擬定 3 個回覆「{{UTTERANCE}}」的句子。",
         "system": "您是一個繁體中文的感情助理。",
-        "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+        "assistant": ""
     },
     "document": []
 }

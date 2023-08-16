@@ -8,8 +8,8 @@
     "user_defined": {
         "_asNoun": [
             "助學貸款",
-            "對象",
             "家庭",
+            "對象",
             "控制欲"
         ],
         "_asIdiom": [
@@ -2320,13 +2320,13 @@
                 {
                     "pos": "ENTITY_noun",
                     "text": "男友",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "月",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 },
                 {

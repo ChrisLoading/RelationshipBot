@@ -5,7 +5,32 @@
         "atk": "v265",
         "intent": "1.0"
     },
-    "user_defined": null,
+    "user_defined": {
+        "term": [
+            "對方"
+        ],
+        "term2": [
+            "另一半"
+        ],
+        "term3": [
+            "生活習慣"
+        ],
+        "term4": [
+            "三更半夜"
+        ],
+        "term5": [
+            "老媽子"
+        ],
+        "term6": [
+            "煩人"
+        ],
+        "term7": [
+            "同步"
+        ],
+        "term8": [
+            "外縣市"
+        ]
+    },
     "utterance": {
         "女友超黏我": {
             "id": "8f40aaea-b94c-4c7a-bcc8-1a0cafc88526",
@@ -32,7 +57,7 @@
             ]
         },
         "男友超囉嗦": {
-            "id": "0c8203c1-4ac6-40e2-b2a2-14a5a1c5b8dc",
+            "id": "ec04d4ed-c730-4271-8848-1e442e46a55f",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -43,25 +68,42 @@
                 {
                     "pos": "MODIFIER",
                     "text": "超",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "囉嗦",
                     "checked": true,
-                    "checkbox": false
+                    "checkbox": true
+                }
+            ]
+        },
+        "男友超煩人": {
+            "id": "0bcf0f69-8a8f-4298-bf8a-68e11468b5f5",
+            "argument": [
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
                 },
                 {
-                    "pos": "CLAUSE_particle",
-                    "text": "囉",
+                    "pos": "MODIFIER",
+                    "text": "超",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_oov",
-                    "text": "嗦",
-                    "checked": false,
+                    "pos": "UserDefined",
+                    "text": "煩人",
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "女友像老媽子": {
-            "id": "503abde6-a11b-443f-b1b3-4dc6d8389f9b",
+            "id": "3a2c2545-aecb-4783-ba08-a24e425d700d",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -76,21 +118,15 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_pronoun",
-                    "text": "老媽",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "子",
+                    "pos": "UserDefined",
+                    "text": "老媽子",
                     "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "女友管東管西": {
-            "id": "810f693f-0b6b-403a-bb57-e78d736d653f",
+            "id": "d7213ae7-21da-47b3-a948-af9315dff217",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -99,9 +135,9 @@
                     "checkbox": true
                 },
                 {
-                    "pos": "ENTITY_nounHead",
+                    "pos": "UserDefined",
                     "text": "管東管西",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -271,26 +307,6 @@
                             "checked": false
                         },
                         {
-                            "text": "聽不懂",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "通曉",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "精通",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "講理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "曉得",
                             "level": "word2vec",
                             "checked": false
@@ -301,7 +317,27 @@
                             "checked": false
                         },
                         {
+                            "text": "精通",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "諳",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "通曉",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "講理",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽不懂",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -482,7 +518,7 @@
                         {
                             "text": "埋怨",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "怨恨",
@@ -557,12 +593,12 @@
                         {
                             "text": "批評",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "責怪",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "大罵",
@@ -582,7 +618,7 @@
                         {
                             "text": "嗆聲",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "投訴",
@@ -592,7 +628,7 @@
                         {
                             "text": "責罵",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "罵",
@@ -630,7 +666,7 @@
                 {
                     "pos": "DegreeP",
                     "text": "很小氣",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
@@ -801,17 +837,7 @@
                             "checked": false
                         },
                         {
-                            "text": "爬合",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合簇",
+                            "text": "合種",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -821,12 +847,22 @@
                             "checked": false
                         },
                         {
-                            "text": "合等",
+                            "text": "合下",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "合下",
+                            "text": "合性",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "合等",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -836,17 +872,17 @@
                             "checked": false
                         },
                         {
+                            "text": "合簇",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "爬合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "合醫",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合種",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合性",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -947,17 +983,17 @@
                         {
                             "text": "吵嘴",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "吵架",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "爭執",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "爭端",
@@ -972,7 +1008,7 @@
                         {
                             "text": "爭論",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "爭議",
@@ -982,7 +1018,7 @@
                         {
                             "text": "爭辯",
                             "level": "tier_1",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "爭雄",
@@ -1022,7 +1058,7 @@
                         {
                             "text": "辯駁",
                             "level": "tier_2",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "打鬥",
@@ -1035,9 +1071,14 @@
                             "checked": false
                         },
                         {
-                            "text": "偷情",
+                            "text": "打架",
                             "level": "word2vec",
                             "checked": false
+                        },
+                        {
+                            "text": "口角",
+                            "level": "word2vec",
+                            "checked": true
                         },
                         {
                             "text": "互毆",
@@ -1045,19 +1086,14 @@
                             "checked": false
                         },
                         {
+                            "text": "偷情",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "打鬧",
                             "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "口角",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "打架",
-                            "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         }
                     ],
                     "text": "爭吵",
@@ -1300,17 +1336,7 @@
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "知道",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1320,7 +1346,17 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "知道",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1330,7 +1366,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1365,17 +1401,17 @@
                             "checked": false
                         },
                         {
-                            "text": "輕視",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "忽略了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "輕忽",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忽視了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1395,7 +1431,7 @@
                             "checked": false
                         },
                         {
-                            "text": "忽視了",
+                            "text": "輕視",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1858,22 +1894,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相信",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起來",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1883,12 +1904,27 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "以為",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1984,37 +2020,7 @@
                             "checked": false
                         },
                         {
-                            "text": "常做",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "作",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做事",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有做",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "做著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2024,12 +2030,42 @@
                             "checked": false
                         },
                         {
-                            "text": "指做",
+                            "text": "做了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "常做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有做",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "新做",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "做著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "指做",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2226,16 +2262,6 @@
                             "checked": false
                         },
                         {
-                            "text": "驚覺",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "發覺",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "知道了",
                             "level": "word2vec",
                             "checked": false
@@ -2246,12 +2272,22 @@
                             "checked": false
                         },
                         {
-                            "text": "明白了",
+                            "text": "明白",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "明白",
+                            "text": "驚覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "發覺",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "明白了",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2342,17 +2378,17 @@
                             "checked": false
                         },
                         {
-                            "text": "給愛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "建愛",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "勒愛",
+                            "text": "有愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "給愛",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2362,12 +2398,7 @@
                             "checked": false
                         },
                         {
-                            "text": "到愛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "集愛",
+                            "text": "喜歡",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2377,12 +2408,17 @@
                             "checked": false
                         },
                         {
-                            "text": "喜歡",
+                            "text": "勒愛",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "有愛",
+                            "text": "集愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "到愛",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -2400,7 +2436,7 @@
             ]
         },
         "吵架的時候對方老愛講難聽的話": {
-            "id": "b6d22876-7843-4dc8-9736-d6e563eb7efd",
+            "id": "efd2d463-fd2f-4a23-a7fa-15645cd38037",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -2498,15 +2534,15 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_pronoun",
+                    "pos": "UserDefined",
                     "text": "對方",
-                    "checked": true,
-                    "checkbox": false
+                    "checked": false,
+                    "checkbox": true
                 },
                 {
                     "pos": "MODIFIER",
                     "text": "老",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -2573,12 +2609,12 @@
                         {
                             "text": "煩人",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "難看",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "貼切",
@@ -2588,7 +2624,7 @@
                         {
                             "text": "丟人",
                             "level": "word2vec",
-                            "checked": false
+                            "checked": true
                         },
                         {
                             "text": "彆扭",
@@ -2634,13 +2670,13 @@
                 {
                     "pos": "ENTITY_nouny",
                     "text": "話",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": true
                 }
             ]
         },
         "男友什麼事情都要跟我斤斤計較": {
-            "id": "ed1a96b0-2bfc-4b93-9c04-fbfedd80c7f2",
+            "id": "d2b33874-7c4d-4d6b-8dad-40d3382d524c",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -2700,7 +2736,7 @@
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2710,17 +2746,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2730,7 +2756,17 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2753,14 +2789,14 @@
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "IDIOM",
+                    "pos": "UserDefined",
                     "text": "斤斤計較",
-                    "checked": false,
-                    "checkbox": false
+                    "checked": true,
+                    "checkbox": true
                 }
             ]
         },
@@ -2992,22 +3028,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相信",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看起來",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3017,12 +3038,27 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相信",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "以為",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3122,18 +3158,18 @@
                 {
                     "pos": "ENTITY_nounHead",
                     "text": "交集",
-                    "checked": false,
+                    "checked": true,
                     "checkbox": true
                 }
             ]
         },
         "我覺得我在這段感情中付出的比對方多": {
-            "id": "a9585c46-dbf1-448e-9576-6381e7d187ff",
+            "id": "b5b1fed9-f1fa-44b2-9887-14611026604b",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -3355,17 +3391,7 @@
                             "checked": false
                         },
                         {
-                            "text": "聽起來",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "知道",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "直呼",
+                            "text": "認為",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3375,7 +3401,17 @@
                             "checked": false
                         },
                         {
+                            "text": "直呼",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "看起來",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "知道",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3385,7 +3421,7 @@
                             "checked": false
                         },
                         {
-                            "text": "認為",
+                            "text": "聽起來",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -3397,7 +3433,7 @@
                 {
                     "pos": "ENTITY_pronoun",
                     "text": "我",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -3508,37 +3544,7 @@
                             "checked": false
                         },
                         {
-                            "text": "花費",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "貢獻",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "奉獻",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "奮鬥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "負出",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "忍耐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "傾注了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3548,12 +3554,42 @@
                             "checked": false
                         },
                         {
-                            "text": "犧牲",
+                            "text": "貢獻",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "花費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "傾注了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "忍耐",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "耗費",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "奮鬥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "犧牲",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "負出",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3577,96 +3613,76 @@
                     "pos": "ACTION_verb",
                     "lexy": [
                         {
-                            "text": "核對",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "比擬",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "比較",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "清查",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "確認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "驗算",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "對照",
+                            "text": "比起",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "採樣",
+                            "text": "穿比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "判讀",
+                            "text": "有比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "分析",
+                            "text": "遠比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "檢測",
+                            "text": "到比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "鑒定",
+                            "text": "變得比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "篩選",
+                            "text": "老比",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "推敲",
+                            "text": "更比",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "愛芝",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "受比",
                             "level": "word2vec",
                             "checked": false
                         }
                     ],
-                    "text": "比對",
+                    "text": "比",
                     "checked": false,
                     "checkbox": false
                 },
                 {
-                    "pos": "ENTITY_nounHead",
-                    "text": "方",
+                    "pos": "UserDefined",
+                    "text": "對方",
                     "checked": false,
                     "checkbox": true
                 },
                 {
                     "pos": "MODIFIER",
                     "text": "多",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 }
             ]
         },
         "越來越容易看到另一半的缺點更勝於優點": {
-            "id": "bebc43c2-8042-4564-9bde-ac29faa18e1f",
+            "id": "d61c6d2c-fc2a-4c68-a53c-817c1c97e396",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -3729,13 +3745,13 @@
                 {
                     "pos": "MODIFIER",
                     "text": "越",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
                     "pos": "MODIFIER",
                     "text": "容易",
-                    "checked": true,
+                    "checked": false,
                     "checkbox": false
                 },
                 {
@@ -3767,7 +3783,32 @@
                             "checked": false
                         },
                         {
+                            "text": "看過",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "看到了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "聽見",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "看著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "瞥見",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3778,31 +3819,6 @@
                         },
                         {
                             "text": "感覺到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "看著",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聽見",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "瞥見",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "聽到",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3822,16 +3838,10 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "MODIFIER",
-                    "text": "另",
+                    "pos": "UserDefined",
+                    "text": "另一半",
                     "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "MODIFIER",
-                    "text": "一半",
-                    "checked": true,
-                    "checkbox": false
+                    "checkbox": true
                 },
                 {
                     "pos": "FUNC_inner",
@@ -3873,6 +3883,44 @@
         }
     },
     "alias": {},
-    "prompt": {},
-    "document": []
+    "prompt": {
+        "user": "請擬定 3 個回覆「{{UTTERANCE}}」的句子。",
+        "system": "您是一個繁體中文的感情助理。",
+        "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+    },
+    "document": [
+        {
+            "title": "個性問題",
+            "content": {
+                "A": "其實不管任何性格，重點在於兩個人願不願意溝通，只要找到對的溝通方法，放下一點自我與本身愛好，試著站在對方的立場想，並體認到雖然我沒辦法100%接受對方行為，但是我至少試著理解並100%尊重對方，彼此自然也能達到一個關係平衡的狀態。",
+                "Q1": "我男友個性不好"
+            }
+        },
+        {
+            "title": "付出問題",
+            "content": {
+                "A": "兩人關係有問題的時候，建議先「溝通」。不過溝通跟抱怨的差別很多人都分不出來，就覺得溝通是我跟你講我對你有哪些不滿（這是抱怨），溝通是我告訴你我有多麼委屈（這還是抱怨）。\n\n溝通是，我告訴你我在想什麼，我對關係/這件事/你有一些期待，也許你的想法和我不一樣，所以你對關係/這件事/我的期待也不一樣。",
+                "Q1": "我覺得我在這段感情中付出的比對方多",
+                "Q2": "他似乎對我越來越不在意",
+                "Q3": "越來越容易看到另一半的缺點更勝於優點"
+            }
+        },
+        {
+            "title": "越來越容易看到另一半的缺點更勝於優點",
+            "content": {
+                "A": "",
+                "Q": ""
+            }
+        },
+        {
+            "title": "黏人",
+            "content": {
+                "A": "黏人代表缺乏安全感，更多時候可能是缺乏自信，或在溝通時總是沒辦法得到想要的結果所以期待透過相處改變。建議您多傾聽對方想要的是什麼，如果自己做不到更不該隨便同意，也不要給出類似「你想去哪裡我都陪你去」的廣泛承諾。另外，可以多鼓勵他和朋友出去，另外，讓他發掘自己的興趣也很重要！閒暇之餘有專注的事物會讓他在感情上更容易「分心」。",
+                "Q1": "女友超黏我",
+                "Q2": "男友超煩人",
+                "Q3": "",
+                "Q4": ""
+            }
+        }
+    ]
 }

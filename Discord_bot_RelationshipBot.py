@@ -87,7 +87,7 @@ class BotClient(discord.Client):
                 resultDICT = getLokiResult(msgSTR)
                 logging.debug("######\nLoki 處理結果如下：")
                 logging.debug(resultDICT)
-                replySTR = resultDICT["response"]
+                replySTR = resultDICT["response"][0]
             await message.reply(replySTR)
 
 

@@ -49,15 +49,19 @@ import math
 import os
 import re
 try:
-    from intent import Loki_sex
-    from intent import Loki_loyalty
+    from intent import Loki_family
+    from intent import Loki_money
     from intent import Loki_personality
     from intent import Loki_life_style
+    from intent import Loki_sex
+    from intent import Loki_loyalty
 except:
-    from .intent import Loki_sex
-    from .intent import Loki_loyalty
+    from .intent import Loki_family
+    from .intent import Loki_money
     from .intent import Loki_personality
     from .intent import Loki_life_style
+    from .intent import Loki_sex
+    from .intent import Loki_loyalty
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -187,13 +191,13 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
         for index, key in enumerate(inputLIST):
             lokiResultDICT = {}
             for resultIndex in range(0, lokiRst.getLokiLen(index)):
-                # sex
-                if lokiRst.getIntent(index, resultIndex) == "sex":
-                    lokiResultDICT = Loki_sex.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                # family
+                if lokiRst.getIntent(index, resultIndex) == "family":
+                    lokiResultDICT = Loki_family.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
-                # loyalty
-                if lokiRst.getIntent(index, resultIndex) == "loyalty":
-                    lokiResultDICT = Loki_loyalty.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+                # money
+                if lokiRst.getIntent(index, resultIndex) == "money":
+                    lokiResultDICT = Loki_money.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
                 # personality
                 if lokiRst.getIntent(index, resultIndex) == "personality":
@@ -202,6 +206,14 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 # life_style
                 if lokiRst.getIntent(index, resultIndex) == "life_style":
                     lokiResultDICT = Loki_life_style.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # sex
+                if lokiRst.getIntent(index, resultIndex) == "sex":
+                    lokiResultDICT = Loki_sex.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # loyalty
+                if lokiRst.getIntent(index, resultIndex) == "loyalty":
+                    lokiResultDICT = Loki_loyalty.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -275,6 +287,30 @@ def testLoki(inputLIST, filterLIST):
         print(resultDICT["msg"])
 
 def testIntent():
+    # family
+    print("[TEST] family")
+    inputLIST = ['婆婆管太多','被家人逼分手','他們家欠很多債','家庭背景差太多','家庭背景的關係','父母反對就分手','穩聊對象有家庭','要我趕快生孩子','他有他的家人要顧','原生家庭條件不好','婆婆很重視門當戶對','婆媳問題該怎麼處理','我不能接受他的家庭','男友從小被媽媽家暴','對方媽媽的控制欲很強','怎麼跟男友家人好好相處','該因為對方家庭而分手嗎','家庭環境因素改變不了而分手','他的家庭和價值觀與我不太相符','來自一個家裡沒有任何房子的家庭']
+    testLoki(inputLIST, ['family'])
+    print("")
+
+    # money
+    print("[TEST] money")
+    inputLIST = ['他哪來的錢','我沒有經費','一起分攤房租','對方沒房沒車','情侶出遊費用','男友說房租要AA','助學貸款的關係','經濟條件很普通','對方月入2萬出頭','他真的都沒在存錢','同居還不用付房租','因為經濟能力自卑','我賺我男友的兩倍','女友什麼都要我付錢','女友出門都不帶錢包','男友常常偷家裡的錢','都是建立在金錢關係上','不想讓他覺得都是他在負擔','不要花費超過自己經濟能力','我跟另一半的經濟非常懸殊','沒辦法回送金額相當的禮物','真的要因為經濟能力分手嗎','怕他覺得我是一直花他錢的女生','有一定的經濟能力才能給對方好的未來']
+    testLoki(inputLIST, ['money'])
+    print("")
+
+    # personality
+    print("[TEST] personality")
+    inputLIST = ['女友超黏我','男友超囉嗦','男友超煩人','女友像老媽子','女友管東管西','我男友不夠懂我','我男友個性不好','男友很喜歡抱怨','我男友個性很小氣','跟男友價值觀不合','我們經常為了小事爭吵','我很常覺得自己被忽視','跟男友在一起很不快樂','他似乎對我越來越不在意','常覺得自己什麼都做不好','我不知道他是不是真心愛我','吵架的時候對方老愛講難聽的話','男友什麼事情都要跟我斤斤計較','我覺得我們彼此的興趣愈來愈少交集','我覺得我在這段感情中付出的比對方多','越來越容易看到另一半的缺點更勝於優點']
+    testLoki(inputLIST, ['personality'])
+    print("")
+
+    # life_style
+    print("[TEST] life_style")
+    inputLIST = ['作息不一致','男友沒未來','我男友超髒的','女友要我陪她聊天','男友去哪都不報備','我男友生活習慣很差','男友回家衣服都亂丟','男友睡覺打呼超大聲','我們的生活步調不一致','男友一直打電動不陪我','男友很常回家都不陪我','下班回家只想一個人靜靜','男友上廁所都不掀馬桶蓋','一直都遠距離不知道該怎麼辦','女友點很多餐點但每次都吃不完','我男友每天都要加班到很晚才回來','我注重健康飲食，男友愛吃垃圾食物','我習慣早起，男友都要三更半夜才睡','跟男友不同縣市工作生活作息不同步','覺得每天至少一次講電話或視訊很沒有必要']
+    testLoki(inputLIST, ['life_style'])
+    print("")
+
     # sex
     print("[TEST] sex")
     inputLIST = ['不做愛有錯嗎','性冷感怎麼辦','男友不愛戴套','女友是死亡海鮮','性事不合怎麼辦','無性生活想分手','男友有包莖問題','男友的性欲太強','性癖很多的另一半','我們性需求不一致','把我當發洩的工具','月事來男友還想做','男友太持久怎麼辦','找各種藉口逃避性事','對床事態度越來越冷淡','感覺自己沒有服務到她','抱怨我怎麼性慾那麼大','伴侶不願意討論床事問題','我需求很大但就是有點快','為什麼一定要婚前性行為','男友喜歡趁我還沒醒弄我','女友在性事方面好像變了個人','沒有心靈上兩人互相滿足的感覺','不小心幫他摸到睡著他就開始不爽了']
@@ -285,18 +321,6 @@ def testIntent():
     print("[TEST] loyalty")
     inputLIST = ['我被戴綠帽了','同時跟我在一起','男友腳踏兩條船','一夜情算不算出軌','偷偷下載交友軟體','出軌跟健身教練玩','前陣子被男友劈腿','她因為無聊出軌了','已經原諒過他一次了','已經給過他一次機會了','我對他有一些不信任感','發現女友跟別人劈腿了','男友很愛跟其他女生搞曖昧','男友很愛跟前女友藕斷絲連','對方還留著前任的物品該怎麼辦','我對他的信任可以說是完全破滅','開始懷疑我是不是以工作為名外遇','開始懷疑我是不是變心了才不想被碰','我不在的時候都是另一個女孩在他身邊','他除了劈腿以外其他條件都符合我的擇偶標準']
     testLoki(inputLIST, ['loyalty'])
-    print("")
-
-    # personality
-    print("[TEST] personality")
-    inputLIST = ['女友超黏我','男友超囉嗦','女友像老媽子','女友管東管西','我男友不夠懂我','我男友個性不好','男友很喜歡抱怨','我男友個性很小氣','跟男友價值觀不合','我們經常為了小事爭吵','我很常覺得自己被忽視','跟男友在一起很不快樂','他似乎對我越來越不在意','常覺得自己什麼都做不好','我不知道他是不是真心愛我','吵架的時候對方老愛講難聽的話','男友什麼事情都要跟我斤斤計較','我覺得我們彼此的興趣愈來愈少交集','我覺得我在這段感情中付出的比對方多','越來越容易看到另一半的缺點更勝於優點']
-    testLoki(inputLIST, ['personality'])
-    print("")
-
-    # life_style
-    print("[TEST] life_style")
-    inputLIST = ['作息不一致','男友沒未來','我男友超髒的','女友要我陪她聊天','男友去哪都不報備','我男友生活習慣很差','男友回家衣服都亂丟','男友睡覺打呼超大聲','我們的生活步調不一致','男友一直打電動不陪我','男友很常回家都不陪我','下班回家只想一個人靜靜','男友上廁所都不掀馬桶蓋','一直都遠距離不知道該怎麼辦','女友點很多餐點但每次都吃不完','我男友每天都要加班到很晚才回來','我注重健康飲食，男友愛吃垃圾食物','我習慣早起，男友都要三經半夜才睡','跟男友不同縣市工作生活作息不同步','覺得每天至少一次講電話或視訊很沒有必要']
-    testLoki(inputLIST, ['life_style'])
     print("")
 
 

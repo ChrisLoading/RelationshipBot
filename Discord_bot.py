@@ -13,8 +13,6 @@ from RelationshipBot import runLoki
 logging.basicConfig(level=logging.DEBUG)
 
 
-
-
 punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
 def getLokiResult(inputSTR):
     punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
@@ -87,7 +85,7 @@ class BotClient(discord.Client):
                 resultDICT = getLokiResult(msgSTR)
                 logging.debug("######\nLoki 處理結果如下：")
                 logging.debug(resultDICT)
-                replySTR = resultDICT["response"][0]
+                replySTR = resultDICT["response"]
             await message.reply(replySTR)
 
 

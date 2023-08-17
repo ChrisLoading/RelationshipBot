@@ -80,7 +80,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[我]無法克制[自己]不[出軌]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[2],args[2])
         else:
             # write your code here
             pass
@@ -94,14 +94,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[男友][很]愛跟其他[女生][搞曖昧]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[2],args[3])
         else:
             # write your code here
             pass
 
     if utterance == "[男友][會]跟其他[女生][搞曖昧]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[2],args[3])
         else:
             # write your code here
             pass
@@ -115,14 +115,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[男友]跟[前女友]藕斷絲連":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[1])
         else:
             # write your code here
             pass
 
     if utterance == "一夜情算不[算][出軌]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[1])
         else:
             # write your code here
             pass
@@ -164,14 +164,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "被[女友][戴綠帽]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[0],args[1])
         else:
             # write your code here
             pass
 
     if utterance == "被[戴綠帽]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[0])
         else:
             # write your code here
             pass

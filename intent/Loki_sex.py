@@ -87,7 +87,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[女友]的[鮑魚]很臭":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[1])
         else:
             # write your code here
             pass
@@ -143,7 +143,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[男友]有[包莖]問題":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[1])
         else:
             # write your code here
             pass
@@ -157,7 +157,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[男友]的性慾[太強]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[1])
         else:
             # write your code here
             pass
@@ -171,7 +171,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "對[床事][態度]越來[越][冷淡]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = (getResponse(utterance, args)).format(args[0],args[1],args[3])
         else:
             # write your code here
             pass

@@ -17,8 +17,31 @@
         ]
     },
     "utterance": {
-        "婆婆管太多怎麼辦": {
-            "id": "94abb127-4dcc-4231-a35b-a695c6ea2daa",
+        "婆媳問題": {
+            "id": "405abf70-a130-45fb-9322-c4fbd0698384",
+            "argument": [
+                {
+                    "pos": "ENTITY_oov",
+                    "text": "婆",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "媳",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "問題",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "婆婆管太多": {
+            "id": "66b22ffd-ebab-49bf-9457-d3c2932deefd",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -37,293 +60,11 @@
                     "text": "太多",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "婆媳問題該怎麼處理": {
-            "id": "054a5316-1994-4dfe-b14e-c53bdd2a6a2c",
-            "argument": [
-                {
-                    "pos": "ENTITY_oov",
-                    "text": "婆",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "媳",
-                    "checked": true,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "問題",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "懲處",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "處分",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "處治",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "處置",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "處罰",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "交涉",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "做買賣",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "制裁",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "商談",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "對付",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "應付",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "懲治",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "懲罰",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "懲辦",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "改過",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "教養",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "治病",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "矯治",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "稱作",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "管教",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "要求",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "調教",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "責罰",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "醫治",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "重罰",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "過濾",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "解決",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "處理過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分揀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "判讀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "處理不",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "應變",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "防腐",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "管理",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "處理",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "被家人逼分手怎麼辦": {
-            "id": "75297947-d860-4394-9023-11007f6f899b",
+        "被家人逼分手": {
+            "id": "f5e7dc77-bb5f-4e7e-8c5f-8b4e00edc86e",
             "argument": [
                 {
                     "pos": "ACTION_lightVerb",
@@ -391,12 +132,7 @@
                             "checked": false
                         },
                         {
-                            "text": "要脅",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "逼著",
+                            "text": "脅逼",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -406,7 +142,12 @@
                             "checked": false
                         },
                         {
-                            "text": "脅逼",
+                            "text": "迫使",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "逼著",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -421,7 +162,7 @@
                             "checked": false
                         },
                         {
-                            "text": "迫使",
+                            "text": "要脅",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -524,7 +265,22 @@
                             "checked": false
                         },
                         {
+                            "text": "結婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拆夥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "復婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "離婚",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -539,27 +295,7 @@
                             "checked": false
                         },
                         {
-                            "text": "離婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拆夥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相戀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "反目",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結婚",
+                            "text": "復合",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -569,7 +305,12 @@
                             "checked": false
                         },
                         {
-                            "text": "復合",
+                            "text": "反目",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相戀",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -577,75 +318,11 @@
                     "text": "分手",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "男友家欠很多債怎麼辦": {
-            "id": "bbd56ee8-c3cf-46fd-9130-f62189442964",
+        "男友家欠很多債": {
+            "id": "d82d03c4-19e2-43e7-8507-903efdcf5c99",
             "argument": [
                 {
                     "pos": "ENTITY_nouny",
@@ -677,17 +354,7 @@
                             "checked": false
                         },
                         {
-                            "text": "拿不到",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "欠下",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "欠下了",
+                            "text": "拖欠",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -697,17 +364,17 @@
                             "checked": false
                         },
                         {
+                            "text": "積欠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "欠了",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "拖欠",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "素欠",
+                            "text": "欠下了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -717,7 +384,17 @@
                             "checked": false
                         },
                         {
-                            "text": "積欠",
+                            "text": "拿不到",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "素欠",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "欠下",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -737,75 +414,11 @@
                     "text": "債",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "穩聊對象有家庭怎麼辦": {
-            "id": "80f7d8bd-f8d7-479a-839d-d3d9ee43b18e",
+        "穩聊對象有家庭": {
+            "id": "348db142-0c71-4424-8663-2ce693bbbdc4",
             "argument": [
                 {
                     "pos": "ACTION_verb",
@@ -874,22 +487,22 @@
                             "checked": false
                         },
                         {
-                            "text": "含有",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "有同",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "存在著",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "含有",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "有過",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -908,633 +521,11 @@
                     "text": "家庭",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "怎麼跟男友家人好好相處": {
-            "id": "0c3bfd8f-2fab-4231-9beb-a6b58b6a9cc0",
-            "argument": [
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_conjunction",
-                    "text": "跟",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "男友",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_noun",
-                    "text": "家人",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "DegreeP",
-                    "text": "好好",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "互動",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "招接",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "共處",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "閒聊",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "談心",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "共事",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交談",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相聚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "獨處",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "交往",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相愛",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "重逢",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "相處",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "該因為對方家庭而分手嗎": {
-            "id": "322f7844-aa17-4beb-8ed5-f15296fd9d0b",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inter",
-                    "text": "因為",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "對方",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "家庭",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "而",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "分割",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分化",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分成",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分擔",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分攤",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分散",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分發",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分裂",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分裝",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分配",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分開",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "瓜分",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "了斷",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "劈開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "破開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "終結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "裂開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配發",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "復婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分手了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "私奔",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "離婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拆夥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相戀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "反目",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "復合",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "分手",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "該因為父母反對就分手嗎": {
-            "id": "1c4a0c96-d000-4f3a-9904-95274820a0c3",
-            "argument": [
-                {
-                    "pos": "MODAL",
-                    "text": "該",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inter",
-                    "text": "因為",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "父母",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "反抗",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "對抗",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "否認",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "抱怨",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "抵抗",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "進諫",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "贊同",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "抵制",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "批評",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "贊成",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "擁護",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "支持",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "譴責",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "鼓吹",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主張",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "反對",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "就",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "分割",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分化",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分成",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分擔",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分攤",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分散",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分發",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分裂",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分裝",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分配",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "分開",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "瓜分",
-                            "level": "tier_1",
-                            "checked": false
-                        },
-                        {
-                            "text": "了斷",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "劈開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "破開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "終結",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "裂開",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "配發",
-                            "level": "tier_2",
-                            "checked": false
-                        },
-                        {
-                            "text": "復婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "分手了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "私奔",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "離婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "拆夥",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "相戀",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "反目",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "結婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "訂婚",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "復合",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "分手",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_YesNoQ",
-                    "text": "嗎",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "婆婆很重視門當戶對怎麼辦": {
-            "id": "1999a0c7-45a8-43d7-ab04-880448200c2f",
+        "婆婆很重視門當戶對": {
+            "id": "f67b824d-de24-4fce-8813-c649a81ec736",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -1646,75 +637,11 @@
                     "text": "門當戶對",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "對方要我趕快生孩子怎麼辦": {
-            "id": "dbf64a8c-0a86-488e-b861-11d06c7eaf4b",
+        "對方要我趕快生孩子": {
+            "id": "c44bb831-7bb1-4103-a57c-2f04f1a13234",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -1756,7 +683,7 @@
                             "checked": false
                         },
                         {
-                            "text": "餓了",
+                            "text": "真要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1766,17 +693,7 @@
                             "checked": false
                         },
                         {
-                            "text": "需",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
                             "text": "更要",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1786,7 +703,17 @@
                             "checked": false
                         },
                         {
-                            "text": "真要",
+                            "text": "想",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "需",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "餓了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1840,12 +767,7 @@
                             "checked": false
                         },
                         {
-                            "text": "拚命",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想趕",
+                            "text": "趕忙",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -1855,7 +777,12 @@
                             "checked": false
                         },
                         {
-                            "text": "趕忙",
+                            "text": "拚命",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "想趕",
                             "level": "word2vec",
                             "checked": false
                         }
@@ -1869,75 +796,11 @@
                     "text": "生孩子",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "我不能接受他的家庭怎麼辦": {
-            "id": "26cfd2fc-f3ab-4804-9421-eb993e42567f",
+        "我不能接受他的家庭": {
+            "id": "604c27c5-84d5-416d-8e11-3bed2b7c6581",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -2106,7 +969,7 @@
                             "checked": false
                         },
                         {
-                            "text": "接受過",
+                            "text": "接受了",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2116,22 +979,17 @@
                             "checked": false
                         },
                         {
-                            "text": "接受了",
+                            "text": "給予",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "接受過",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
                             "text": "聽從",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "遵從",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "給予",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2142,6 +1000,11 @@
                         },
                         {
                             "text": "同意了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "遵從",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -2182,75 +1045,11 @@
                     "text": "家庭",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "男友從小被媽媽家暴怎麼辦": {
-            "id": "1120c306-2308-4a61-9730-8b5d42750d5c",
+        "男友從小被媽媽家暴": {
+            "id": "d38cde94-67ff-4962-982a-1ab87e600581",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -2339,75 +1138,11 @@
                     "text": "家暴",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "男友有他的家人要顧怎麼辦": {
-            "id": "eea60c3c-f1bc-4a36-bfee-a26d89a0283a",
+        "男友有他的家人要顧": {
+            "id": "2eda2141-c2b9-4f39-a2e4-ffb7c7550af7",
             "argument": [
                 {
                     "pos": "ENTITY_noun",
@@ -2721,75 +1456,11 @@
                     "text": "顧",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "雙方家庭背景差太多怎麼辦": {
-            "id": "7450546f-a002-4afa-b030-248fd965d4cb",
+        "雙方家庭背景差太多": {
+            "id": "80adccb2-3618-445b-8b02-babc90152eed",
             "argument": [
                 {
                     "pos": "MODIFIER",
@@ -2887,75 +1558,11 @@
                     "text": "太多",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "家庭背景的關係想分手怎麼辦": {
-            "id": "7f5c2ee2-8e63-4c31-bb34-64b674116fbd",
+        "家庭背景的關係想分手": {
+            "id": "6d0a440d-8bf3-4e13-b017-6b20a8ce875f",
             "argument": [
                 {
                     "pos": "UserDefined",
@@ -3150,17 +1757,7 @@
                             "checked": false
                         },
                         {
-                            "text": "願",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "有想",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "想讓",
+                            "text": "更想",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3170,7 +1767,17 @@
                             "checked": false
                         },
                         {
+                            "text": "想讓",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
                             "text": "打算",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "願",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3180,12 +1787,12 @@
                             "checked": false
                         },
                         {
-                            "text": "要",
+                            "text": "有想",
                             "level": "word2vec",
                             "checked": false
                         },
                         {
-                            "text": "更想",
+                            "text": "要",
                             "level": "word2vec",
                             "checked": false
                         },
@@ -3196,6 +1803,634 @@
                         }
                     ],
                     "text": "想",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "分割",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分化",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分成",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分擔",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分攤",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分散",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分發",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分裂",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分裝",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分配",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分開",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "瓜分",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "劈開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "終結",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裂開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "結婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拆夥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "離婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分手了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私奔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "反目",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相戀",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "分手",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "對方原生家庭條件不好": {
+            "id": "0bc9501b-8517-4145-ac74-37204190a69a",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "原生",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "家庭",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_nounHead",
+                    "text": "條件",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_negation",
+                    "text": "不",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "MODIFIER",
+                    "text": "好",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "對方媽媽的控制欲很強": {
+            "id": "c0b5f84b-0d26-4775-a35d-6ab40ba70695",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "媽媽",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "控制欲",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "很強",
+                    "checked": true,
+                    "checkbox": true
+                }
+            ]
+        },
+        "怎麼跟男友家人好好相處": {
+            "id": "0c3bfd8f-2fab-4231-9beb-a6b58b6a9cc0",
+            "argument": [
+                {
+                    "pos": "CLAUSE_HowQ",
+                    "text": "怎麼",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_conjunction",
+                    "text": "跟",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "男友",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ENTITY_noun",
+                    "text": "家人",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "好好",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "互動",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "招接",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "交談",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "共處",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "重逢",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "交往",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "閒聊",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相愛",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相聚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "共事",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "談心",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "獨處",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "相處",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "該因為對方家庭而分手嗎": {
+            "id": "322f7844-aa17-4beb-8ed5-f15296fd9d0b",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inter",
+                    "text": "因為",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "家庭",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "而",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "分割",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分化",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分成",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分擔",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分攤",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分散",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分發",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分裂",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分裝",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分配",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "分開",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "瓜分",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "了斷",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "劈開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "破開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "終結",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "裂開",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "配發",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "結婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "拆夥",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "離婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "分手了",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "私奔",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "復合",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "訂婚",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "反目",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "相戀",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "分手",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
+                    "checked": false,
+                    "checkbox": false
+                }
+            ]
+        },
+        "該因為父母反對就分手嗎": {
+            "id": "1c4a0c96-d000-4f3a-9904-95274820a0c3",
+            "argument": [
+                {
+                    "pos": "MODAL",
+                    "text": "該",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inter",
+                    "text": "因為",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "ENTITY_nouny",
+                    "text": "父母",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "ACTION_verb",
+                    "lexy": [
+                        {
+                            "text": "反抗",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "對抗",
+                            "level": "tier_1",
+                            "checked": false
+                        },
+                        {
+                            "text": "否認",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抱怨",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵抗",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "進諫",
+                            "level": "tier_2",
+                            "checked": false
+                        },
+                        {
+                            "text": "贊同",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "抵制",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "批評",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "贊成",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "擁護",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "支持",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "譴責",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "鼓吹",
+                            "level": "word2vec",
+                            "checked": false
+                        },
+                        {
+                            "text": "主張",
+                            "level": "word2vec",
+                            "checked": false
+                        }
+                    ],
+                    "text": "反對",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "就",
                     "checked": false,
                     "checkbox": false
                 },
@@ -3348,277 +2583,15 @@
                     "checkbox": false
                 },
                 {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
+                    "pos": "CLAUSE_YesNoQ",
+                    "text": "嗎",
                     "checked": false,
                     "checkbox": false
                 }
             ]
         },
-        "對方原生家庭條件不好怎麼辦": {
-            "id": "caa6bb46-4ffa-4ec9-a471-1b6ac49cc67d",
-            "argument": [
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "對方",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_nouny",
-                    "text": "原生",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "家庭",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "ENTITY_nounHead",
-                    "text": "條件",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "FUNC_negation",
-                    "text": "不",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_degreeHead",
-                    "text": "好",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "對方媽媽的控制欲很強怎麼辦": {
-            "id": "13b19758-b31e-449a-8230-5665edfee7a7",
-            "argument": [
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "對方",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ENTITY_pronoun",
-                    "text": "媽媽",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "FUNC_inner",
-                    "text": "的",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "UserDefined",
-                    "text": "控制欲",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "DegreeP",
-                    "text": "很強",
-                    "checked": true,
-                    "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
-        },
-        "家庭環境因素改變不了想分手怎麼辦": {
-            "id": "b7fcdd4e-7b3d-43b7-9652-0e05e18115be",
+        "家庭環境因素改變不了想分手": {
+            "id": "11ec8f41-2664-4995-8691-998bb5887463",
             "argument": [
                 {
                     "pos": "UserDefined",
@@ -3667,23 +2640,11 @@
                     "text": "分手",
                     "checked": false,
                     "checkbox": false
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "他的家庭和價值觀與我不太相符怎麼辦": {
-            "id": "751ec70d-c5cb-427a-999c-5f2a4027dbdd",
+        "他的家庭和價值觀與我不太相符": {
+            "id": "59bcf086-7a71-4349-8af9-d2331fc1813b",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -3738,75 +2699,11 @@
                     "text": "太相符",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         },
-        "對方來自一個家裡沒有任何房子的家庭怎麼辦": {
-            "id": "84f75a7c-f556-4ed5-935a-fc74d0f69606",
+        "對方來自一個家裡沒有任何房子的家庭": {
+            "id": "97207324-8a20-496b-a873-c8cf2ea27628",
             "argument": [
                 {
                     "pos": "ENTITY_pronoun",
@@ -3867,70 +2764,6 @@
                     "text": "家庭",
                     "checked": true,
                     "checkbox": true
-                },
-                {
-                    "pos": "CLAUSE_HowQ",
-                    "text": "怎麼",
-                    "checked": false,
-                    "checkbox": false
-                },
-                {
-                    "pos": "ACTION_verb",
-                    "lexy": [
-                        {
-                            "text": "籌辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "承辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "舉辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "主辦",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦了",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦過",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦副",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦說",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "辦理",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "合辦",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "辦",
-                    "checked": false,
-                    "checkbox": false
                 }
             ]
         }

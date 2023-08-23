@@ -1,4 +1,2 @@
 *.info
-__pycache__
-life_style/intent/__pycache__
-personality/intent/__pycache__
+*__pycache__

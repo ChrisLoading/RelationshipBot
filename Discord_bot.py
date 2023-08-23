@@ -7,8 +7,21 @@ import json
 import re
 from datetime import datetime
 from pprint import pprint
+import sys
 
-from RelationshipBot import runLoki
+sys.path.append('/family')
+sys.path.append('/life_style')
+sys.path.append('/loyalty')
+sys.path.append('/money')
+sys.path.append('/personality')
+sys.path.append('/sex')
+
+import family.family
+import life_style.life_style
+import loyalty.loyalty
+import money.money
+import personality.personality
+import sex.sex
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -18,7 +31,7 @@ def getLokiResult(inputSTR):
     punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
     inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     filterLIST = []
-    resultDICT = runLoki(inputLIST, filterLIST)
+    resultDICT = loyalty.loyalty.runLoki(inputLIST, filterLIST)
     logging.debug("Loki Result => {}".format(resultDICT))
     return resultDICT
 

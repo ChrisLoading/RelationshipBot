@@ -31,9 +31,19 @@ def getLokiResult(inputSTR):
     punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
     inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     filterLIST = []
-    resultDICT = loyalty.loyalty.runLoki(inputLIST, filterLIST)
-    logging.debug("Loki Result => {}".format(resultDICT))
-    return resultDICT
+    resultDICT_family = family.family.runLoki(inputLIST, filterLIST)
+    resultDICT_life_style = life_style.life_style.runLoki(inputLIST, filterLIST)
+    resultDICT_money = money.money.runLoki(inputLIST, filterLIST)
+    resultDICT_personality = personality.personality.runLoki(inputLIST, filterLIST)
+    resultDICT_sex = sex.sex.runLoki(inputLIST, filterLIST)
+    resultDICT_loyalty = loyalty.loyalty.runLoki(inputLIST, filterLIST)
+    logging.debug("Loki Result family => {}".format(resultDICT_family))
+    logging.debug("Loki Result life_style => {}".format(resultDICT_life_style))
+    logging.debug("Loki Result money => {}".format(resultDICT_money))
+    logging.debug("Loki Result personality => {}".format(resultDICT_personality))
+    logging.debug("Loki Result sex => {}".format(resultDICT_sex))
+    logging.debug("Loki Result loyalty => {}".format(resultDICT_loyalty))
+    return resultDICT_family,resultDICT_life_style,resultDICT_money,resultDICT_personality,resultDICT_sex,resultDICT_loyalty
 
 class BotClient(discord.Client):
 
@@ -68,15 +78,9 @@ class BotClient(discord.Client):
             logging.debug("本 bot 被叫到了！")
             msgSTR = message.content.replace("<@{}> ".format(self.user.id), "").strip()
             logging.debug("人類說：{}".format(msgSTR))
-            if msgSTR == "ping":
-                replySTR = "pong"
-            elif msgSTR == "ping ping":
-                replySTR = "pong pong"
-            elif "ping" in msgSTR :
-                replySTR = "pong "* msgSTR.count("ping")
-
+            
 # ##########初次對話：這裡是 keyword trigger 的。
-            elif msgSTR.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
+            if msgSTR.lower() in ["哈囉","嗨","你好","您好","hi","hello"]:
                 #有講過話(判斷對話時間差)
                 if message.author.id in self.mscDICT.keys():
                     timeDIFF = datetime.now() - self.mscDICT[message.author.id]["updatetime"]
@@ -95,13 +99,38 @@ class BotClient(discord.Client):
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                resultDICT = getLokiResult(msgSTR)
+                resultDICT_family,resultDICT_life_style,resultDICT_money,resultDICT_personality,resultDICT_sex,resultDICT_loyalty = getLokiResult(msgSTR)
                 logging.debug("######\nLoki 處理結果如下：")
-                logging.debug(resultDICT)
-                replySTR = resultDICT["response"]
+                replySTR = ""
+                reply = False
+                if "response" in resultDICT_family:
+                    replySTR = resultDICT_family["response"][0] + "\n"
+                    resultDICT_family.clear()
+                    reply = True
+                if "response" in resultDICT_life_style:
+                    replySTR = replySTR + resultDICT_life_style["response"][0] + "\n"
+                    resultDICT_life_style.clear()
+                    reply = True
+                if "response" in resultDICT_money:
+                    replySTR = replySTR + resultDICT_money["response"][0]+ "\n"
+                    resultDICT_money.clear()
+                    reply = True
+                if "response" in resultDICT_personality:
+                    replySTR = replySTR + resultDICT_personality["response"][0]+ "\n"
+                    resultDICT_personality.clear()
+                    reply = True
+                if "response" in resultDICT_sex:
+                    replySTR = replySTR + resultDICT_sex["response"][0]+ "\n"
+                    resultDICT_sex.clear()
+                    reply = True
+                if "response" in resultDICT_loyalty:
+                    replySTR = replySTR + resultDICT_loyalty["response"][0]+ "\n"
+                    resultDICT_loyalty.clear()
+                    reply = True
+            if reply == False:
+                replySTR = "聽不懂喔~可以再說的詳細一點嗎?"
             await message.reply(replySTR)
-
-
+            
 if __name__ == "__main__":
     with open("account.info", encoding="utf-8") as f: #讀取account.info
         accountDICT = json.loads(f.read())

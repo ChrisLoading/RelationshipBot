@@ -22,6 +22,7 @@ import loyalty.loyalty
 import money.money
 import personality.personality
 import sex.sex
+import pingying_preprocessing.pingying_preprocessing
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -31,12 +32,13 @@ def getLokiResult(inputSTR):
     punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
     inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     filterLIST = []
-    resultDICT_family = family.family.runLoki(inputLIST, filterLIST)
-    resultDICT_life_style = life_style.life_style.runLoki(inputLIST, filterLIST)
-    resultDICT_money = money.money.runLoki(inputLIST, filterLIST)
-    resultDICT_personality = personality.personality.runLoki(inputLIST, filterLIST)
-    resultDICT_sex = sex.sex.runLoki(inputLIST, filterLIST)
-    resultDICT_loyalty = loyalty.loyalty.runLoki(inputLIST, filterLIST)
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    resultDICT_family = family.family.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
+    resultDICT_life_style = life_style.life_style.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
+    resultDICT_money = money.money.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
+    resultDICT_personality = personality.personality.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
+    resultDICT_sex = sex.sex.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
+    resultDICT_loyalty = loyalty.loyalty.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
     logging.debug("Loki Result family => {}".format(resultDICT_family))
     logging.debug("Loki Result life_style => {}".format(resultDICT_life_style))
     logging.debug("Loki Result money => {}".format(resultDICT_money))
@@ -99,7 +101,12 @@ class BotClient(discord.Client):
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
+                resultDICT_pre = pingying_preprocessing.pingying_preprocessing.execLoki(msgSTR)
+                if "correct" in resultDICT_pre:
+                    msgSTR = resultDICT_pre["correct"][0]
+                    logging.debug("Loki Result preprocessing => {}".format(resultDICT_pre))
                 resultDICT_family,resultDICT_life_style,resultDICT_money,resultDICT_personality,resultDICT_sex,resultDICT_loyalty = getLokiResult(msgSTR)
+                resultDICT_pre.clear()
                 logging.debug("######\nLoki 處理結果如下：")
                 replySTR = ""
                 reply = False

@@ -80,14 +80,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]的[妹妹]很臭":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in userDefinedDICT["_vagina"]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]的[妹妹]有[異味]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in userDefinedDICT["_vagina"]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass

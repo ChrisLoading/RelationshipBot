@@ -50,6 +50,13 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
+    if utterance == "[女友]性冷感":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[對方][只是][把][我]當成發洩的[工具]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -58,6 +65,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[對方][都][直接]跳過[前]戲":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方][都]不跟[我]做愛":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -148,7 +162,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[對方]把[我]當成發洩的工具":
+    if utterance == "[對方]把[我]當成發洩的[工具]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

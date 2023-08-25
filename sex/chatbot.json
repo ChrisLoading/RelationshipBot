@@ -1,25 +1,25 @@
 {
     "both": {
         "prompt": {
-            "user": "請擬定1到3個「{{UTTERANCE}}」簡短的回覆或建議",
+            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
-            "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+            "assistant": ""
         },
         "document": []
     },
     "boyfriend": {
         "prompt": {
-            "user": "請擬定1到3個「{{UTTERANCE}}」簡短的回覆或建議",
+            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
-            "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+            "assistant": ""
         },
         "document": []
     },
     "girlfriend": {
         "prompt": {
-            "user": "請擬定1到3個「{{UTTERANCE}}」簡短的回覆或建議",
+            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
-            "assistant": "問題「{{Q}}」，答案「{{A}} 」。"
+            "assistant": ""
         },
         "document": []
     }

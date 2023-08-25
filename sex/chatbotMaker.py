@@ -134,13 +134,9 @@ if __name__ == "__main__":
                     for utterance in utteranceLIST:
                         contentSTR = intentDICT["prompt"]["user"].replace("{{UTTERANCE}}", re.sub("[\[\]]", "", utterance))
                         if contentSTR:
-                            promptDICT["user"] = [{"role": "user", "content": contentSTR}]
-
-                            responseLIST = getResponse(intentSTR, promptDICT["system"], promptDICT["assistant"], promptDICT["user"])
-                            if utterance in resultDICT:
-                                resultDICT[utterance].extend(responseLIST)
-                                resultDICT[utterance] = list(set(resultDICT[utterance]))
-                            else:
+                            if utterance not in resultDICT:
+                                promptDICT["user"] = [{"role": "user", "content": contentSTR}]
+                                responseLIST = getResponse(intentSTR, promptDICT["system"], promptDICT["assistant"], promptDICT["user"])
                                 resultDICT[utterance] = responseLIST
                             print("[Utterance] {}".format(utterance))
 

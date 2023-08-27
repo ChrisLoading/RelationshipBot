@@ -52,14 +52,14 @@ try:
     from intent import Loki_trait
     from intent import Loki_fight
     from intent import Loki_trait_adv
-    from intent import Loki_care
     from intent import Loki_care_adv
+    from intent import Loki_care
 except:
     from .intent import Loki_trait
     from .intent import Loki_fight
     from .intent import Loki_trait_adv
-    from .intent import Loki_care
     from .intent import Loki_care_adv
+    from .intent import Loki_care
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -201,13 +201,13 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "trait_adv":
                     lokiResultDICT = Loki_trait_adv.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
-                # care
-                if lokiRst.getIntent(index, resultIndex) == "care":
-                    lokiResultDICT = Loki_care.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
-
                 # care_adv
                 if lokiRst.getIntent(index, resultIndex) == "care_adv":
                     lokiResultDICT = Loki_care_adv.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # care
+                if lokiRst.getIntent(index, resultIndex) == "care":
+                    lokiResultDICT = Loki_care.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -285,13 +285,13 @@ def testLoki(inputLIST, filterLIST):
 def testIntent():
     # trait
     print("[TEST] trait")
-    inputLIST = ['對方超囉嗦','對方超煩人','對方超黏我','對方個性不好','對方個性小氣','對方像老媽子','對方很愛聊天','對方超級麻煩','對方很喜歡抱怨','對方很愛聊八卦','對方愛管東管西','我們相處得好累','對方什麼都做不好','對方對我超級依賴','對方根本不了解我','對方總是心不在焉','我付出得比對方多','跟對方價值觀不合','對方和我興趣不一樣','對方有老媽子的特質','覺得自己什麼都不好','對方很愛聊有的沒有的','我們很多方面都不太合','跟對方價值觀背道而馳','對方對每個細節都很在意','對方和我喜歡做的事不一樣','我認為我所付出的勝過對方','越來越容易看到對方的缺點','與對方在一起時心情無比沮喪','對方什麼事情都要跟我斤斤計較','我們之間的興趣愈來愈不一致了','我在這段感情中貢獻的比對方多','與對方交往讓我感到非常不舒適','覺得自己在各個方面都做得不太好']
+    inputLIST = ['對方很小氣','對方提分手','對方超囉嗦','對方超煩人','對方超黏我','男友很小氣','對方個性不好','對方個性小氣','對方像老媽子','對方很愛聊天','對方超級麻煩','對方超級黏我','對方佔有慾極強','對方很喜歡抱怨','對方很愛聊八卦','對方情緒勒索我','對方愛管東管西','我們相處得好累','男友占有慾很強','對方什麼都做不好','對方對我超級依賴','對方根本不了解我','對方總是心不在焉','我付出得比對方多','我和男友三觀不合','跟對方價值觀不合','女友有很強的佔有慾','對方和我興趣不一樣','對方有老媽子的特質','覺得自己什麼都不好','對方很愛聊有的沒有的','我們很多方面都不太合','跟對方價值觀背道而馳','跟男友價值觀背道而馳','對方對每個細節都很在意','對方和我喜歡做的事不一樣','我認為我所付出的勝過對方','越來越容易看到對方的缺點','與對方在一起時心情無比沮喪','對方什麼事情都要跟我斤斤計較','我們之間的興趣愈來愈不一致了','我在這段感情中貢獻的比對方多','與對方交往讓我感到非常不舒適','覺得自己在各個方面都做得不太好','對方永遠用感情勒索式對話回應溝通']
     testLoki(inputLIST, ['trait'])
     print("")
 
     # fight
     print("[TEST] fight")
-    inputLIST = ['對方嘴臭','對方讓人頭痛','對方說個˙不停','對方特別喜歡抱怨','對方經常愛發牢騷','對方總是口出狂言','對方常對我冷嘲熱諷','我們常常因小事而爭吵','我們經常為了小事爭吵','在對方身邊讓我覺得非常煩躁','對方總是用傷人的話語來挑釁','小事常常引起我們之間的爭吵','吵架的時候對方老愛講難聽的話','對方常常使用激烈的詞句來侮辱我']
+    inputLIST = ['對方嘴臭','對方囉囉嗦嗦','對方說個不停','對方讓人頭痛','男友囉囉嗦嗦','對方特別喜歡抱怨','對方經常愛發牢騷','對方總是口出狂言','對方動不動就爆粗口','對方常對我冷嘲熱諷','我們常常因小事而爭吵','我們經常為了小事爭吵','在對方身邊讓我覺得非常煩躁','對方總是用傷人的話語來挑釁','小事常常引起我們之間的爭吵','我和老公每天都吵架吵個沒完','吵架的時候對方老愛講難聽的話','對方常常使用激烈的詞句來侮辱我']
     testLoki(inputLIST, ['fight'])
     print("")
 
@@ -301,16 +301,16 @@ def testIntent():
     testLoki(inputLIST, ['trait_adv'])
     print("")
 
-    # care
-    print("[TEST] care")
-    inputLIST = ['對方不懂我','對方不在乎我','我經常被他忽視','我經常被她忘記','對方一點都不在乎我','對方根本就不在乎我','我經常覺得自己被忘記','他似乎對我越來越不在意','我常常感到自己不被重視','我不知道他是不是真心愛我','我不確定他是不是還對我有感情']
-    testLoki(inputLIST, ['care'])
-    print("")
-
     # care_adv
     print("[TEST] care_adv")
     inputLIST = ['男友一點都不在乎我']
     testLoki(inputLIST, ['care_adv'])
+    print("")
+
+    # care
+    print("[TEST] care")
+    inputLIST = ['對方不懂我','沒有安全感','對方不在乎我','對方都不關心我','我經常被他忽視','我經常被她忘記','對方一點都不在乎我','對方根本就不在乎我','我經常覺得自己被忘記','他似乎對我越來越不在意','我常常感到自己不被重視','我不知道他是不是真心愛我','我不確定他是不是還對我有感情']
+    testLoki(inputLIST, ['care'])
     print("")
 
 

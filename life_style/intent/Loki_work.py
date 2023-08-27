@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for care
+    Loki module for work
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_care = True
+DEBUG_work = True
 CHATBOT_MODE = True
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_care.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_work.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_care:
-        print("[care] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_work:
+        print("[work] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -50,91 +50,77 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[他][似乎]對[我]越來[越]不在意":
+    if utterance == "[對方][每天]加班到很晚[才]回家":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][一點][都]不在乎[我]":
+    if utterance == "[對方]下班[都]不回家":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][根本]就不在乎[我]":
+    if utterance == "[對方]工時[很長]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]不關心[我]":
+    if utterance == "[老公][每天]加班":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]不在乎[我]":
+    if utterance == "[老公]下班[都]不知道去哪裡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]不懂[我]":
+    if utterance == "[老公]回家[都]不下班":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我][常常]感到[自己]不被重視":
+    if utterance == "下班[後][我][只]想[好好]放鬆":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我][經常]被[他]忽視":
+    if utterance == "下班[後][我][只]想放鬆":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我][經常]被[她]忘記":
+    if utterance == "下班[後][我]不想被[女友]吵":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我][經常]覺得[自己]被忘記":
+    if utterance == "下班[後]不想被煩":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我]不知道[他]是不[是][真心]愛[我]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[我]不確定[他]是不[是]還對[我]有[感情]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "沒有安全感":
+    if utterance == "下班回家[只]想[一個]人[靜][一][靜]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

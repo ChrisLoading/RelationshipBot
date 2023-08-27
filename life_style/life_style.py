@@ -52,10 +52,12 @@ try:
     from intent import Loki_habit
     from intent import Loki_long_distance
     from intent import Loki_future
+    from intent import Loki_work
 except:
     from .intent import Loki_habit
     from .intent import Loki_long_distance
     from .intent import Loki_future
+    from .intent import Loki_work
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -197,6 +199,10 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "future":
                     lokiResultDICT = Loki_future.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
+                # work
+                if lokiRst.getIntent(index, resultIndex) == "work":
+                    lokiResultDICT = Loki_work.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
                 if k not in resultDICT:
@@ -273,7 +279,7 @@ def testLoki(inputLIST, filterLIST):
 def testIntent():
     # habit
     print("[TEST] habit")
-    inputLIST = ['對方嘴臭','對方超髒的','不想每天視訊','對方常常晚睡','對方習慣很糟','每天視訊好煩','對方去哪都不講','對方愛亂丟垃圾','對方都不做家事','對方都要很晚睡','我們作息不一致','下班後我不想被吵','不喜歡每天講電話','對方上廁所不鎖門','對方上廁所不關門','對方不愛整理房間','對方很愛亂丟垃圾','對方生活習慣很差','對方都半夜不睡覺','對方都很晚才睡覺','對方都要很晚才睡','下班回家只想一個人','對方一直說八卦好吵','對方不重視個人衛生','對方回家衣服都亂丟','對方打電動都不陪我','對方睡覺打呼超大聲','每天講電話很沒必要','下班後我不想被女友吵','對方上廁所不掀馬桶蓋','對方堅持睡覺不開冷氣','對方衣服丟得滿地都是','對方都要三更半夜才睡','對方點很多餐都不吃完','對方一直打電動都不陪我','對方囉哩八唆想跟他分手','我習慣早起對方喜歡晚睡','下班回家只想一個人靜一靜','對方每天加班到很晚才回家','對方打電動打到很晚都不陪我','我們的休息時間無法保持一致','每天起床與睡覺的時間不一致','覺得每天至少講一次電話或視訊很沒必要']
+    inputLIST = ['對方嘴臭','對方很吵','男友很吵','對方腳很臭','對方超髒的','不想每天視訊','對方常常晚睡','對方習慣很糟','每天視訊好煩','對方去哪都不講','對方愛亂丟垃圾','對方都不做家事','對方都要很晚睡','我們作息不一致','下班後我不想被吵','不喜歡每天講電話','對方上廁所不鎖門','對方上廁所不關門','對方不愛整理房間','對方很愛亂丟垃圾','對方生活習慣很差','對方衛生習慣很糟','對方都半夜不睡覺','對方都很晚才睡覺','對方都要很晚才睡','下班回家只想一個人','對方一直說八卦好吵','對方不重視個人衛生','對方回家衣服都亂丟','對方打電動都不陪我','對方睡覺打呼超吵的','對方睡覺打呼超大聲','對方衣服襪子都亂丟','每天講電話很沒必要','對方上廁所不掀馬桶蓋','對方堅持睡覺不開冷氣','對方衣服丟得滿地都是','對方都要三更半夜才睡','對方點很多餐都不吃完','對方一直打電動都不陪我','對方囉哩八唆想跟他分手','我習慣早起對方喜歡晚睡','對方打電動打到很晚都不陪我','我們的休息時間無法保持一致','每天起床與睡覺的時間不一致','覺得每天至少講一次電話或視訊很沒必要']
     testLoki(inputLIST, ['habit'])
     print("")
 
@@ -287,6 +293,12 @@ def testIntent():
     print("[TEST] future")
     inputLIST = ['對方沒前途','對方沒未來','對方毫無前途可言','對方是一個沒有未來的人']
     testLoki(inputLIST, ['future'])
+    print("")
+
+    # work
+    print("[TEST] work")
+    inputLIST = ['對方工時很長','老公每天加班','下班後不想被煩','下班後我只想放鬆','對方下班都不回家','老公回家都不下班','下班後我不想被女友吵','下班後我只想好好放鬆','老公下班都不知道去哪裡','下班回家只想一個人靜一靜','對方每天加班到很晚才回家']
+    testLoki(inputLIST, ['work'])
     print("")
 
 

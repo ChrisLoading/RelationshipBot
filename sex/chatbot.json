@@ -1,7 +1,7 @@
 {
     "both": {
         "prompt": {
-            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
+            "user": "請擬定3個「{{UTTERANCE}}」的簡短回覆或建議，請直接回答不需列點",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
             "assistant": ""
         },
@@ -9,7 +9,7 @@
     },
     "boyfriend": {
         "prompt": {
-            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
+            "user": "請擬定3個「{{UTTERANCE}}」的簡短回覆或建議，請直接回答不需列點",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
             "assistant": ""
         },
@@ -17,7 +17,7 @@
     },
     "girlfriend": {
         "prompt": {
-            "user": "請擬定1至3個「{{UTTERANCE}}」的回覆或建議",
+            "user": "請擬定3個「{{UTTERANCE}}」的簡短回覆或建議，請直接回答不需列點",
             "system": "你是一個感情諮詢的助理，問題主要是與情侶之間的性事有關",
             "assistant": ""
         },

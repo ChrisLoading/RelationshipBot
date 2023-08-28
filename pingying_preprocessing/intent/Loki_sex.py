@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for pow
+    Loki module for sex
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_pow = True
+DEBUG_sex = True
 CHATBOT_MODE = False
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_pow.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_sex.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_pow:
-        print("[pow] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_sex:
+        print("[sex] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -50,65 +50,82 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[p]友":
+    if utterance == "X愛":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
 
-    if utterance == "ㄩ[p]":
+    if utterance == "ㄋㄞˇ":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-           if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"奶")
 
-    if utterance == "ㄩ過[ㄆ]":
+    if utterance == "ㄞˋ":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"愛")
 
-    if utterance == "扌丁[P]":
+    if utterance == "假ㄋ":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace("扌丁"+args[0],"打炮")
-    if utterance == "約[p]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
-    if utterance == "約過[p]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"假奶")
 
-    if utterance == "打[P]":
+    if utterance == "做X":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
 
-    if utterance == "騙[p]":
+    if utterance == "做i":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[0] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[0],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
 
-    if utterance == "騙[我][p]":
+    if utterance == "大ㄋ":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            if args[1] in userDefinedDICT["_p"]:
-                resultDICT["correct"] = inputSTR.replace(args[1],"炮")
+            resultDICT["correct"] = inputSTR.replace(utterance,"大奶")
+
+    if utterance == "女乃":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"奶")
+
+    if utterance == "小ㄋ":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"小奶")
+
+    if utterance == "忄生":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"性")
+
+    if utterance == "扌丁":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"打")
+
+    if utterance == "捉i":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
+
+    if utterance == "氵查":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"渣")
 
     return resultDICT

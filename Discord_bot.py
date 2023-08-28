@@ -32,7 +32,7 @@ def getLokiResult(inputSTR):
     punctuationPat = re.compile("[,\.\?:;，。？、：；\n]+")
     inputLIST = punctuationPat.sub("\n", inputSTR).split("\n")
     filterLIST = []
-    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
+    splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";","."]
     resultDICT_family = family.family.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
     resultDICT_life_style = life_style.life_style.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
     resultDICT_money = money.money.execLoki(inputLIST, filterLIST=filterLIST, splitLIST=splitLIST)
@@ -101,7 +101,8 @@ class BotClient(discord.Client):
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
-                resultDICT_pre = pingying_preprocessing.pingying_preprocessing.execLoki(msgSTR)
+                splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";","."]
+                resultDICT_pre = pingying_preprocessing.pingying_preprocessing.execLoki(msgSTR,splitLIST=splitLIST)
                 if "correct" in resultDICT_pre:
                     msgSTR = resultDICT_pre["correct"][0]
                     logging.debug("Loki Result preprocessing => {}".format(resultDICT_pre))

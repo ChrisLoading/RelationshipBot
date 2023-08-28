@@ -54,28 +54,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["correct"] = inputSTR.replace(utterance,"加LINE")
 
     if utterance == "加奈":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["correct"] = inputSTR.replace(utterance,"加LINE")
 
     if utterance == "加賴":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["correct"] = inputSTR.replace(utterance,"加LINE")
 
     if utterance == "打賴":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
-            pass
+            resultDICT["correct"] = inputSTR.replace(utterance,"打LINE")
 
     return resultDICT

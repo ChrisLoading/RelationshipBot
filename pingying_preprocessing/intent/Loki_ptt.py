@@ -54,7 +54,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            # write your code here
             resultDICT["correct"] = inputSTR.replace(utterance,"PTT")
 
     return resultDICT

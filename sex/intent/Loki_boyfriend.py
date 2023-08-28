@@ -52,70 +52,80 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[大姨媽]來[對方]還想做":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[0] in userDefinedDICT["_period"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方][硬]不起來":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] == "硬":
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方][都][自己]來":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if "自己" in args[2]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方][都][自己]解決":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if "自己" in args[2]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方][都]不使用[保險套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[2] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方][都]不戴[套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[2] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]不想要戴[套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]不想要用[保險套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]不愛戴[套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]不愛用[保險套]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_condom"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -136,14 +146,16 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]寧願[自己]來":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if "自己" in args[2]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]寧願[自己]解決":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if "自己" in args[2]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -192,21 +204,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]的[陰莖][硬]不起來":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_penis"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]的[陰莖]很臭":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_penis"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]的[陰莖]有異味":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[1] in userDefinedDICT["_penis"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -227,28 +242,40 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[男友]包莖":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[0] in userDefinedDICT["_noun"] and args[0] != "女友":
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+            elif args[0] == "女友":
+                resultDICT["response"] = "通常女性不會有包莖的問題，請試著重新輸入，若有冒犯請見諒。"
         else:
             # write your code here
             pass
 
     if utterance == "[男友]太持久":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[0] in userDefinedDICT["_noun"] and args[0] != "女友":
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+            elif args[0] == "女友":
+                resultDICT["response"] = "通常女性不會有太持久的問題，請試著重新輸入，若有冒犯請見諒。"
         else:
             # write your code here
             pass
 
     if utterance == "[男友]早洩":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[0] in userDefinedDICT["_noun"] and args[0] != "女友":
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+            elif args[0] == "女友":
+                resultDICT["response"] = "通常女性不會有早洩的問題，請試著重新輸入，若有冒犯請見諒。"
         else:
             # write your code here
             pass
 
     if utterance == "[男友]陽痿":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args).format(*args)
+            if args[0] in userDefinedDICT["_noun"] and args[0] != "女友":
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+            elif args[0] == "女友":
+                resultDICT["response"] = "通常女性不會有陽痿的問題，請試著重新輸入，若有冒犯請見諒。"
         else:
             # write your code here
             pass

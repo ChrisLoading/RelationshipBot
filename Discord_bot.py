@@ -136,6 +136,8 @@ class BotClient(discord.Client):
                     reply = True
             if reply == False:
                 replySTR = "聽不懂喔~可以再說的詳細一點嗎?"
+            else:
+                replySTR = "我已經了解到你的困擾，以下是我給的建議:\n\n\n" + replySTR + "\n\n請注意，以上回覆僅供參考，請自行評估問題的嚴重性以尋求專業人士的協助。"
             await message.reply(replySTR)
             
 if __name__ == "__main__":

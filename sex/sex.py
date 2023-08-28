@@ -292,16 +292,15 @@ def testIntent():
 
 if __name__ == "__main__":
     # 測試所有意圖
-    # testIntent()
+    testIntent()
 
     # 測試其它句子
     filterLIST = []
     splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";"]
     # 設定參考資料
-    # refDICT = {
-    #     #"key": []
-    # }
-    # resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
-    # resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
-    resultDICT = execLoki("男友只想騙我炮",filterLIST=filterLIST)  
-    print(resultDICT)# output => {"key": ["今天天氣", "後天氣象"]}
+    refDICT = {
+        #"key": []
+    }
+    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, refDICT=refDICT)                      # output => {"key": ["今天天氣"]}
+    resultDICT = execLoki("今天天氣如何？後天氣象如何？", filterLIST=filterLIST, splitLIST=splitLIST, refDICT=refDICT) # output => {"key": ["今天天氣", "後天氣象"]}
+    resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST=filterLIST, refDICT=refDICT)                # output => {"key": ["今天天氣", "後天氣象"]}

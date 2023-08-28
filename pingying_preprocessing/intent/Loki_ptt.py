@@ -55,6 +55,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
-            pass
+            resultDICT["correct"] = inputSTR.replace(utterance,"PTT")
 
     return resultDICT

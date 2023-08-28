@@ -280,4 +280,28 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[對方][做愛]沒有[前]戲":
+        if CHATBOT_MODE:
+            if args[1] in userDefinedDICT["_mL"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方][每天][DIY]":
+        if CHATBOT_MODE:
+            if args[2] in userDefinedDICT["_masturbation"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方][都][自己][DIY]":
+        if CHATBOT_MODE:
+            if args[2] in userDefinedDICT["_masturbation"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
     return resultDICT

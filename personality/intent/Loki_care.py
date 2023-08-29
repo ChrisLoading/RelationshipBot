@@ -92,6 +92,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[對方]對[我]有沒[有][感情]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方]愛不[愛][我]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[我][常常]感到[自己]不被重視":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -120,14 +134,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[我]不知道[他]是不[是][真心]愛[我]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "[我]不確定[他]是不[是]還對[我]有[感情]":
+    if utterance == "是不[是][真心]愛[我]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -135,6 +142,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "沒有安全感":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "還對[我]有[感情]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "還愛[我]嗎":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

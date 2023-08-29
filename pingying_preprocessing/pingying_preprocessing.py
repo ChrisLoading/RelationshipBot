@@ -51,11 +51,17 @@ import re
 try:
     from intent import Loki_pow
     from intent import Loki_sex
+    from intent import Loki_dcard
+    from intent import Loki_ig
     from intent import Loki_line
+    from intent import Loki_ptt
 except:
     from .intent import Loki_pow
     from .intent import Loki_sex
+    from .intent import Loki_dcard
+    from .intent import Loki_ig
     from .intent import Loki_line
+    from .intent import Loki_ptt
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -193,9 +199,21 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "sex":
                     lokiResultDICT = Loki_sex.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
+                # dcard
+                if lokiRst.getIntent(index, resultIndex) == "dcard":
+                    lokiResultDICT = Loki_dcard.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # ig
+                if lokiRst.getIntent(index, resultIndex) == "ig":
+                    lokiResultDICT = Loki_ig.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
                 # line
                 if lokiRst.getIntent(index, resultIndex) == "line":
                     lokiResultDICT = Loki_line.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # ptt
+                if lokiRst.getIntent(index, resultIndex) == "ptt":
+                    lokiResultDICT = Loki_ptt.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
@@ -283,10 +301,28 @@ def testIntent():
     testLoki(inputLIST, ['sex'])
     print("")
 
+    # dcard
+    print("[TEST] dcard")
+    inputLIST = ['低卡','底卡','狄卡','迪卡']
+    testLoki(inputLIST, ['dcard'])
+    print("")
+
+    # ig
+    print("[TEST] ig")
+    inputLIST = ['i居','ㄞG','ㄞ居','哀居','唉居','愛居']
+    testLoki(inputLIST, ['ig'])
+    print("")
+
     # line
     print("[TEST] line")
     inputLIST = ['+賴','加奈','加賴','打賴','看他賴','看他的賴']
     testLoki(inputLIST, ['line'])
+    print("")
+
+    # ptt
+    print("[TEST] ptt")
+    inputLIST = ['批踢踢']
+    testLoki(inputLIST, ['ptt'])
     print("")
 
 

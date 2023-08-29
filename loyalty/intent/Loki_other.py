@@ -518,6 +518,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "[對方][會]和[別][人][幽會]":
         if CHATBOT_MODE:
             if args[0] != "我" and args[4] in userDefinedDICT["_loyalty"]:
+                if args[2]:
+                    args[2] = args[2] + "的"
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here

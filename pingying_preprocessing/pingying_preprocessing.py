@@ -50,8 +50,12 @@ import os
 import re
 try:
     from intent import Loki_pow
+    from intent import Loki_sex
+    from intent import Loki_line
 except:
     from .intent import Loki_pow
+    from .intent import Loki_sex
+    from .intent import Loki_line
 
 
 LOKI_URL = "https://api.droidtown.co/Loki/BulkAPI/"
@@ -185,6 +189,14 @@ def runLoki(inputLIST, filterLIST=[], refDICT={}):
                 if lokiRst.getIntent(index, resultIndex) == "pow":
                     lokiResultDICT = Loki_pow.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
 
+                # sex
+                if lokiRst.getIntent(index, resultIndex) == "sex":
+                    lokiResultDICT = Loki_sex.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
+                # line
+                if lokiRst.getIntent(index, resultIndex) == "line":
+                    lokiResultDICT = Loki_line.getResult(key, lokiRst.getUtterance(index, resultIndex), lokiRst.getArgs(index, resultIndex), lokiResultDICT, refDICT)
+
             # save lokiResultDICT to resultDICT
             for k in lokiResultDICT:
                 if k not in resultDICT:
@@ -261,8 +273,20 @@ def testLoki(inputLIST, filterLIST):
 def testIntent():
     # pow
     print("[TEST] pow")
-    inputLIST = ['p友','ㄩp','約p','扌丁P','約過p','ㄩ過ㄆ']
+    inputLIST = ['p友','ㄩp','打P','約p','騙p','扌丁P','約過p','騙我p','ㄩ過ㄆ']
     testLoki(inputLIST, ['pow'])
+    print("")
+
+    # sex
+    print("[TEST] sex")
+    inputLIST = ['X愛','p腿','做X','做i','捉i','ㄞˋ','假ㄋ','大ㄋ','女乃','小ㄋ','忄生','扌丁','氵查','ㄋㄞˇ']
+    testLoki(inputLIST, ['sex'])
+    print("")
+
+    # line
+    print("[TEST] line")
+    inputLIST = ['+賴','加奈','加賴','打賴','看他賴','看他的賴']
+    testLoki(inputLIST, ['line'])
     print("")
 
 

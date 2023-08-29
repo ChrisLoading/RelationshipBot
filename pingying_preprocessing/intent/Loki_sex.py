@@ -128,4 +128,10 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             resultDICT["correct"] = inputSTR.replace(utterance,"渣")
 
+    if utterance == "p腿":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            resultDICT["correct"] = inputSTR.replace(utterance,"劈腿")
+
     return resultDICT

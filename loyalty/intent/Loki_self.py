@@ -58,14 +58,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[我][只是]犯了[全]天下[男人][都][會]犯的[錯]":
-        if CHATBOT_MODE:
-            if args[0] == "我":
-                resultDICT["response"] = getResponse(utterance, args).format(*args)
-        else:
-            # write your code here
-            pass
-
     if utterance == "[我][常常]精神出軌":
         if CHATBOT_MODE:
             if args[0] == "我":
@@ -326,6 +318,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "[我][只是]去[旅館]開會":
         if CHATBOT_MODE:
             if args[0] in ("我","我們")and args[2] in userDefinedDICT["_hotel"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+        
+    if utterance == "[我][只是]犯了[全]天下[男人][都][會]犯的[錯]":
+        if CHATBOT_MODE:
+            if args[0] in ("我","我們"):
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here

@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for dcard
+    Loki module for DCARD
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_dcard = True
+DEBUG_DCARD = True
 CHATBOT_MODE = False
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_dcard.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_DCARD.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_dcard:
-        print("[dcard] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_DCARD:
+        print("[DCARD] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -54,24 +54,24 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"Dcard")
+            resultDICT["correct"] = inputSTR.replace(utterance,"DCARD")
 
     if utterance == "底卡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"Dcard")
+            resultDICT["correct"] = inputSTR.replace(utterance,"DCARD")
 
     if utterance == "狄卡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"Dcard")
+            resultDICT["correct"] = inputSTR.replace(utterance,"DCARD")
 
     if utterance == "迪卡":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"Dcard")
+            resultDICT["correct"] = inputSTR.replace(utterance,"DCARD")
 
     return resultDICT

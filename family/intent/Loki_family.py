@@ -52,7 +52,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[婆婆][很]重視門當戶對":
         if CHATBOT_MODE:
-            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","對方家裡","對方家庭","夫家","婆家"):
+            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","夫家","婆家"):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -60,7 +60,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[婆婆]管[太多]":
         if CHATBOT_MODE:
-            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","對方家裡","對方家庭","夫家","婆家"):
+            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","夫家","婆家"):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here

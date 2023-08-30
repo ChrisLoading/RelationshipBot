@@ -190,6 +190,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[對方]不陪[我]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[對方]去哪[都]不講":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -330,6 +337,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[每天][都]要打電話":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[每天]講[電話]很沒[必要]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -358,6 +372,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "不想[天天]講電話":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "不想[每天][視訊]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -366,13 +387,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "睡覺打呼超吵":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "覺得[每天][至少]講[一次][電話]或[視訊]很沒[必要]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

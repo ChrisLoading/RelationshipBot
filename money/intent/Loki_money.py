@@ -122,7 +122,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]月薪[28k]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass

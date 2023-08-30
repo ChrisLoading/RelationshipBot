@@ -50,6 +50,13 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
+    if utterance == "[只][會]用冷戰解決[問題]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[對方][常]對[我]冷嘲熱諷":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -162,6 +169,20 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "冷暴力":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "動不[動]對[我]冷暴力":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "吵架吵[個]沒完":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -177,6 +198,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "在[對方][身][邊]讓[我]覺得[非常煩躁]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "老愛冷戰":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

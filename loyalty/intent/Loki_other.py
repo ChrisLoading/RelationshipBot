@@ -533,4 +533,27 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[對方][會]和[他][妹][上床]":
+        if CHATBOT_MODE:
+            if args[0] != "我" and args[4] in userDefinedDICT["_loyalty"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方][會]和她[妹妹][上床]":
+        if CHATBOT_MODE:
+            if args[0] != "我" and args[3] in userDefinedDICT["_loyalty"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[男人]的嘴騙人的鬼":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
+
     return resultDICT

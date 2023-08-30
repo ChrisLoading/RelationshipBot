@@ -62,7 +62,7 @@ class BotClient(discord.Client):
         self.templateDICT = {"updatetime" : None,
                              "latestQuest": ""
         }
-        self.mscDICT = { #userid:templateDICT
+        self.mscDICT = {
         }
         # ####################################################################################
         print('Logged on as {} with id {}'.format(self.user, self.user.id))
@@ -96,11 +96,15 @@ class BotClient(discord.Client):
                 #沒有講過話(給他一個新的template)
                 else:
                     self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
-                    replySTR = msgSTR.title()
+                    self.mscDICT[message.author.id] = 0
+                    replySTR = "嗨嗨~我是感情小助理~\n可以協助您解決感情世界的疑難雜症~\n您可以試著問我有關男女朋友之間的煩惱\n"
 
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
+                count = 1
+                if message.author.id not in self.mscDICT.keys():
+                   self.mscDICT[message.author.id] = 0 
                 splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";","."]
                 resultDICT_pre = pingying_preprocessing.pingying_preprocessing.execLoki(msgSTR,splitLIST=splitLIST)
                 if "correct" in resultDICT_pre:
@@ -112,33 +116,46 @@ class BotClient(discord.Client):
                 replySTR = ""
                 reply = False
                 if "response" in resultDICT_family:
-                    replySTR = resultDICT_family["response"][0] + "\n"
+                    replySTR = str(count)+". "+resultDICT_family["response"][0] + "\n\n"
+                    count = count + 1
                     resultDICT_family.clear()
                     reply = True
                 if "response" in resultDICT_life_style:
-                    replySTR = replySTR + resultDICT_life_style["response"][0] + "\n"
+                    replySTR = replySTR +str(count)+". "+resultDICT_life_style["response"][0] + "\n\n"
+                    count = count + 1
                     resultDICT_life_style.clear()
                     reply = True
                 if "response" in resultDICT_money:
-                    replySTR = replySTR + resultDICT_money["response"][0]+ "\n"
+                    replySTR = replySTR +str(count)+". "+ resultDICT_money["response"][0]+ "\n\n"
+                    count = count + 1
                     resultDICT_money.clear()
                     reply = True
                 if "response" in resultDICT_personality:
-                    replySTR = replySTR + resultDICT_personality["response"][0]+ "\n"
+                    replySTR = replySTR +str(count)+". "+ resultDICT_personality["response"][0]+ "\n\n"
+                    count = count + 1
                     resultDICT_personality.clear()
                     reply = True
                 if "response" in resultDICT_sex:
-                    replySTR = replySTR + resultDICT_sex["response"][0]+ "\n"
+                    replySTR = replySTR +str(count)+". "+ resultDICT_sex["response"][0]+ "\n\n"
+                    count = count + 1
                     resultDICT_sex.clear()
                     reply = True
                 if "response" in resultDICT_loyalty:
-                    replySTR = replySTR + resultDICT_loyalty["response"][0]+ "\n"
+                    replySTR = replySTR +str(count)+". "+resultDICT_loyalty["response"][0]+ "\n\n"
+                    count = count + 1
                     resultDICT_loyalty.clear()
                     reply = True
-            if reply == False:
-                replySTR = "聽不懂喔~可以再說的詳細一點嗎?"
-            else:
-                replySTR = "我已經了解到你的困擾，以下是我給的建議:\n\n\n" + replySTR + "\n\n請注意，以上回覆僅供參考，請自行評估問題的嚴重性以尋求專業人士的協助。"
+                if reply == False:
+                    self.mscDICT[message.author.id] = self.mscDICT[message.author.id] + 1
+                    if self.mscDICT[message.author.id] == 1:
+                        replySTR = "很抱歉，我不太理解您的意思，您可以試著問我有關:\n1.家庭\n2.經濟\n3.個性\n4.生活習慣\n5.性事\n6.忠誠\n 以上6種方面的問題喔~"
+                    elif self.mscDICT[message.author.id] >= 5:
+                        replySTR = "夠了沒啦，就說聽不懂了"
+                    else:
+                        replySTR = "很抱歉，我還是不太理解您的意思，可能是您的狀況較為特殊，暫時無法給您回復"
+                else:
+                    self.mscDICT[message.author.id] = 0
+                    replySTR = "我已經了解到你的困擾，以下是我給您的建議:\n\n\n" + replySTR + "\n\n請注意，以上回覆僅供參考，請自行評估問題的嚴重性以尋求專業人士的協助。"
             await message.reply(replySTR)
             
 if __name__ == "__main__":

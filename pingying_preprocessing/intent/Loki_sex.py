@@ -54,7 +54,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
+            resultDICT["correct"] = inputSTR.upper().replace(utterance,"做愛")
 
     if utterance == "ㄋㄞˇ":
         if CHATBOT_MODE:
@@ -78,13 +78,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
+            resultDICT["correct"] = inputSTR.upper().replace(utterance,"做愛")
 
     if utterance == "做i":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
+            resultDICT["correct"] = inputSTR.lower().replace(utterance,"做愛")
 
     if utterance == "大ㄋ":
         if CHATBOT_MODE:
@@ -120,7 +120,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"做愛")
+            resultDICT["correct"] = inputSTR.lower().replace(utterance,"做愛")
 
     if utterance == "氵查":
         if CHATBOT_MODE:
@@ -132,6 +132,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["correct"] = inputSTR.replace(utterance,"劈腿")
+            resultDICT["correct"] = inputSTR.lower().replace(utterance.lower(),"劈腿")
 
     return resultDICT

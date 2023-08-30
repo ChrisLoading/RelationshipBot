@@ -52,7 +52,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
     if utterance == "[婆婆][很]重視門當戶對":
         if CHATBOT_MODE:
-            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","夫家","婆家"):
+            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨", "岳父", "岳母", "公公", "對方", "男友", "夫家", "婆家"):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -60,7 +60,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[婆婆]管[太多]":
         if CHATBOT_MODE:
-            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨","岳父","岳母","公公","對方","男友","夫家","婆家"):
+            if args[0] in ("婆婆", "媽媽", "伯母", "阿姨", "岳父", "岳母", "公公", "對方", "男友", "夫家", "婆家"):
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -74,6 +74,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             pass
 
     if utterance == "[對方][原生]家庭[條件]不[好]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方][只]想坐[保時捷]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -94,7 +101,42 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "[對方][家人]叫[我們]分手":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方]價值觀跟[我]不[太相符]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方]家[裡][條件]不[好]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方]家庭[條件]不[好]":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "[對方]從[小]被[媽媽]家暴":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "[對方]想結婚":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -136,6 +178,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "價值觀不合":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "因為[對方]家庭[因素]想分手":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -164,6 +213,13 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "女友騙[我][她]是女生":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "婆[媳][問題]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -171,7 +227,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "家庭[環境][因素]改變不了想分手":
+    if utterance == "家庭[因素]改變不了":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
@@ -185,13 +241,6 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "家庭和價值觀跟[我]不[太相符]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
     if utterance == "怎麼跟[對方][家人][好好]相處":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
@@ -199,7 +248,21 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
+    if utterance == "男友騙[我][她]是男友":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
     if utterance == "穩聊[對象]有家庭":
+        if CHATBOT_MODE:
+            resultDICT["response"] = getResponse(utterance, args)
+        else:
+            # write your code here
+            pass
+
+    if utterance == "穩聊[後]被放生":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

@@ -85,7 +85,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[對方][衛生]習慣很糟":
+    if utterance == "[對方][衛生]習慣[很糟]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

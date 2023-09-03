@@ -309,7 +309,7 @@ def testIntent():
 
     # ig
     print("[TEST] ig")
-    inputLIST = ['i居','ㄞG','ㄞ居','哀居','唉居','愛居']
+    inputLIST = ['i居','ㄞG','ㄞ居','哀居','唉居']
     testLoki(inputLIST, ['ig'])
     print("")
 

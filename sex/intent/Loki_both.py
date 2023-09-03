@@ -133,6 +133,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
         else:
             # write your code here
             pass
+    
+    if utterance == "[對方]不喜歡跟[我][做愛]":
+        if CHATBOT_MODE:
+            if args[2] in userDefinedDICT["_mL"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
+        else:
+            # write your code here
+            pass
 
     if utterance == "[對方]不想幫[我]口交":
         if CHATBOT_MODE:

@@ -53,15 +53,15 @@ class BotClient(discord.Client):
         '''
         清空與 messageAuthorID 之間的對話記錄
         '''
-        templateDICT = self.templateDICT
-        templateDICT["updatetime"] = datetime.now()
+        templateDICT = {    "id": messageAuthorID,
+                             "updatetime" : datetime.now(),
+                             "latestQuest": "",
+                             "false_count" : 0
+        }
         return templateDICT
 
     async def on_ready(self):
         # ################### Multi-Session Conversation :設定多輪對話資訊 ###################
-        self.templateDICT = {"updatetime" : None,
-                             "latestQuest": ""
-        }
         self.mscDICT = {
         }
         # ####################################################################################
@@ -96,7 +96,6 @@ class BotClient(discord.Client):
                 #沒有講過話(給他一個新的template)
                 else:
                     self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
-                    self.mscDICT[message.author.id] = 0
                     replySTR = "嗨嗨~我是感情小助理~\n可以協助您解決感情世界的疑難雜症~\n您可以試著問我有關男女朋友之間的煩惱\n"
 
 # ##########非初次對話：這裡用 Loki 計算語意
@@ -104,7 +103,7 @@ class BotClient(discord.Client):
                 #從這裡開始接上 NLU 模型
                 count = 1
                 if message.author.id not in self.mscDICT.keys():
-                   self.mscDICT[message.author.id] = 0 
+                   self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)
                 splitLIST = ["！", "，", "。", "？", "!", ",", "\n", "；", "\u3000", ";","."]
                 resultDICT_pre = pingying_preprocessing.pingying_preprocessing.execLoki(msgSTR,splitLIST=splitLIST)
                 if "correct" in resultDICT_pre:
@@ -116,45 +115,51 @@ class BotClient(discord.Client):
                 replySTR = ""
                 reply = False
                 if "response" in resultDICT_family:
-                    replySTR = str(count)+". "+resultDICT_family["response"][0] + "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_family["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_family["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_family.clear()
                     reply = True
                 if "response" in resultDICT_life_style:
-                    replySTR = replySTR +str(count)+". "+resultDICT_life_style["response"][0] + "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_life_style["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_life_style["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_life_style.clear()
                     reply = True
                 if "response" in resultDICT_money:
-                    replySTR = replySTR +str(count)+". "+ resultDICT_money["response"][0]+ "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_money["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_money["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_money.clear()
                     reply = True
                 if "response" in resultDICT_personality:
-                    replySTR = replySTR +str(count)+". "+ resultDICT_personality["response"][0]+ "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_personality["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_personality["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_personality.clear()
                     reply = True
                 if "response" in resultDICT_sex:
-                    replySTR = replySTR +str(count)+". "+ resultDICT_sex["response"][0]+ "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_sex["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_sex["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_sex.clear()
                     reply = True
                 if "response" in resultDICT_loyalty:
-                    replySTR = replySTR +str(count)+". "+resultDICT_loyalty["response"][0]+ "\n\n"
-                    count = count + 1
+                    for i in range(len(resultDICT_loyalty["response"])):
+                        replySTR = replySTR +str(count)+". "+resultDICT_loyalty["response"][i] + "\n\n"
+                        count = count + 1
                     resultDICT_loyalty.clear()
                     reply = True
                 if reply == False:
-                    self.mscDICT[message.author.id] = self.mscDICT[message.author.id] + 1
-                    if self.mscDICT[message.author.id] == 1:
+                    self.mscDICT[message.author.id]["false_count"] += 1
+                    if self.mscDICT[message.author.id]["false_count"] == 1:
                         replySTR = "很抱歉，我不太理解您的意思，您可以試著問我有關:\n1.家庭\n2.經濟\n3.個性\n4.生活習慣\n5.性事\n6.忠誠\n 以上6種方面的問題喔~"
-                    elif self.mscDICT[message.author.id] >= 5:
+                    elif self.mscDICT[message.author.id]["false_count"] >= 5:
                         replySTR = "夠了沒啦，就說聽不懂了"
                     else:
                         replySTR = "很抱歉，我還是不太理解您的意思，可能是您的狀況較為特殊，暫時無法給您回復"
                 else:
-                    self.mscDICT[message.author.id] = 0
+                    self.mscDICT[message.author.id]["false_count"] = 0
                     replySTR = "我已經了解到你的困擾，以下是我給您的建議:\n\n\n" + replySTR + "\n\n請注意，以上回覆僅供參考，請自行評估問題的嚴重性以尋求專業人士的協助。"
             await message.reply(replySTR)
             

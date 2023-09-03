@@ -59,7 +59,9 @@ class BotClient(discord.Client):
                              "latestQuest": "",
                              "false_count" : 0,
                              "hi_count" : 0,
-                             "bye_count": 0
+                             "bye_count": 0,
+                             "thx_count": 0,
+                             "Q_count" : 0
         }
         return templateDICT
     
@@ -76,7 +78,7 @@ class BotClient(discord.Client):
     
     def choose_conclusion(self,replySTR):
         replyDICT = (
-            "上面的回覆只是給泥參考而已，如果不4合ㄉ話霸偷不要罵偶😣，偶會受傷🤕",
+            "上面的回覆只是給泥參考而已，如果不4合ㄉ話霸偷不要罵偶😣，偶會桑心😢",
             "咳咳，現在發表免責聲明:請自行判斷上述建議是否合適，若必要，請尋求專業人士的協助😐",
             "",
             "如果你真的覺得累了，有時候分手也是一種解脫喔~\n🎵分手快樂~祝你快樂~你可以找到更好的~🎵",
@@ -117,7 +119,7 @@ class BotClient(discord.Client):
                         replySTR = "嗨嗨，你太久沒跟我說話，我還以為你不要我了😢"
                     #有講過話，而且還沒超過5分鐘就又跟我 hello (就繼續上次的對話)
                     else:
-                        if self.mscDICT[message.author.id]["hi_count"] < 5:
+                        if self.mscDICT[message.author.id]["hi_count"] < 4:
                             replySTR = "你剛剛才跟我嗨過喔~你忘記了嗎?"
                             self.mscDICT[message.author.id]["hi_count"] += 1
                         else :
@@ -129,31 +131,35 @@ class BotClient(discord.Client):
                     self.mscDICT[message.author.id]["hi_count"] += 1
             
             elif msgSTR.lower() in ["掰","掰掰","bye","晚安","goodbye","掰囉","byebye","bye bye"]:
-                if message.author.id not in self.mscDICT.keys():
-                    replySTR = "你甚麼都還沒問過欸?直接掰是把我當塑膠?" 
+                if message.author.id not in self.mscDICT.keys() or self.mscDICT[message.author.id]["Q_count"] == 0:
+                    replySTR = "你甚麼都還沒問到欸?真的要走了?" 
                 else :
                     if self.mscDICT[message.author.id]["bye_count"] == 0:
                         replySTR = "掰掰~希望我今天有幫到你，之後有甚麼煩惱都可以隨時跟我說喔!🤗"
                         self.mscDICT[message.author.id]["bye_count"] += 1
-                    elif self.mscDICT[message.author.id]["bye_count"] < 5:
+                    elif self.mscDICT[message.author.id]["bye_count"] < 4:
                         replySTR = "你剛剛才跟我掰掰過喔~你忘記了嗎?趕緊去忙吧~"
                         self.mscDICT[message.author.id]["bye_count"] += 1
                     else :
                         replySTR = "是要掰幾次啦???我都不用休息???不要在這裡浪費生命好不好😠"
                         
-            elif msgSTR.lower() in ["謝啦","謝謝你","thank you","thanks","thankyou","感謝","thx"]:
-                if message.author.id not in self.mscDICT.keys():
+            elif msgSTR.lower() in ["謝啦","謝謝你","thank you","thanks","thankyou","感謝","thx","謝謝"]:
+                if message.author.id not in self.mscDICT.keys() or self.mscDICT[message.author.id]["Q_count"] == 0 :
                     replySTR = "雖然不太清楚我幫了你甚麼，但不客氣~😎" 
                 else :
-                    if self.mscDICT[message.author.id]["bye_count"] == 0:
+                    if self.mscDICT[message.author.id]["thx_count"] == 0:
                         replySTR = "不用客氣啦!希望有幫到你，還有任何煩惱都可以跟我說喔!🤗"
-                        self.mscDICT[message.author.id]["bye_count"] += 1
-                    elif self.mscDICT[message.author.id]["bye_count"] < 5:
+                        self.mscDICT[message.author.id]["thx_count"] += 1
+                    elif self.mscDICT[message.author.id]["thx_count"] < 4:
                         replySTR = "不用謝那麼多次啦~我會害羞😊"
-                        self.mscDICT[message.author.id]["bye_count"] += 1
+                        self.mscDICT[message.author.id]["thx_count"] += 1
                     else :
                         replySTR = "不 客 氣。"
-
+            elif msgSTR.lower() in ["對不起","抱歉","sor","sorry","拍謝","我錯了","我的錯","不要生氣啦","對不起啦"]:
+                if  message.author.id not in self.mscDICT.keys() or (self.mscDICT[message.author.id]["false_count"] < 4 and self.mscDICT[message.author.id]["bye_count"] < 4 and self.mscDICT[message.author.id]["thx_count"] < 4 and self.mscDICT[message.author.id]["hi_count"] < 4) :
+                    replySTR = "怎麼突然道歉了?你沒做錯甚麼事啊~"
+                else:
+                    replySTR = "知錯能改，善莫大焉!我這次就原諒你吧~"
 # ##########非初次對話：這裡用 Loki 計算語意
             else: #開始處理正式對話
                 #從這裡開始接上 NLU 模型
@@ -216,6 +222,9 @@ class BotClient(discord.Client):
                         replySTR = "很抱歉，我還是不太理解您的意思，可能是您的狀況比較特殊，我暫時沒有辦法處理😢"
                 else:
                     self.mscDICT[message.author.id]["false_count"] = 0
+                    self.mscDICT[message.author.id]["thx_count"] = 0
+                    self.mscDICT[message.author.id]["bye_count"] = 0
+                    self.mscDICT[message.author.id]["Q_count"] += 1
                     replySTR = self.choose_conclusion(replySTR)
                     # replySTR = replySTR + "\n\n請注意，以上回覆僅供參考，請自行評估問題的嚴重性以尋求專業人士的協助。"
             await message.reply(replySTR)

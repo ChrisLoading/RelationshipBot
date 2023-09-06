@@ -225,7 +225,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
             # write your code here
             pass
 
-    if utterance == "[對方]堅持睡覺不開冷氣":
+    if utterance == "[對方]堅持睡覺不開[冷氣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

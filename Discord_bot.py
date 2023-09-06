@@ -123,7 +123,7 @@ class BotClient(discord.Client):
                             replySTR = "你剛剛才跟我嗨過喔~你忘記了嗎?"
                             self.mscDICT[message.author.id]["hi_count"] += 1
                         else :
-                            replySTR = "你煩不煩啊??有甚麼問題快問啦!😠你是被另一伴說金魚腦所以才來這裡取暖是不是??🤨"
+                            replySTR = "你煩不煩啊？有甚麼問題快問啦！😠你是被另一伴說金魚腦所以才來這裡取暖是不是？？？🤨"
                 #沒有講過話(給他一個新的template)
                 else:
                     self.mscDICT[message.author.id] = self.resetMSCwith(message.author.id)

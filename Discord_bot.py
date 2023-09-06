@@ -109,7 +109,7 @@ class BotClient(discord.Client):
             logging.debug("人類說：{}".format(msgSTR))
             
 # ##########初次對話：這裡是 keyword trigger 的。
-            if msgSTR.lower() in ["哈囉","嗨","你好","您好","hi","hello","早安","嗨嗨"]:
+            if msgSTR.lower() in ["哈囉","嗨","你好","您好","hi","hello","yo","早安","嗨嗨"]:
                 #有講過話(判斷對話時間差)
                 if message.author.id in self.mscDICT.keys():
                     timeDIFF = datetime.now() - self.mscDICT[message.author.id]["updatetime"]

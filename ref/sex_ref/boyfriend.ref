@@ -1736,6 +1736,35 @@
                 }
             ]
         },
+        "對方的陰莖好臭": {
+            "id": "bfe01613-d1e0-4e96-86d7-9210e87a6176",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "陰莖",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "好臭",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "對方的陰莖很臭": {
             "id": "c2fcef52-a638-4807-b5f8-890a6498d70b",
             "argument": [

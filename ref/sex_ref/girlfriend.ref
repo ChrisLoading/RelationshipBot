@@ -1123,6 +1123,35 @@
                 }
             ]
         },
+        "對方的私密處好臭": {
+            "id": "f859998e-d060-4fcb-8df8-595173ce355c",
+            "argument": [
+                {
+                    "pos": "ENTITY_pronoun",
+                    "text": "對方",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "FUNC_inner",
+                    "text": "的",
+                    "checked": false,
+                    "checkbox": false
+                },
+                {
+                    "pos": "UserDefined",
+                    "text": "私密處",
+                    "checked": true,
+                    "checkbox": true
+                },
+                {
+                    "pos": "DegreeP",
+                    "text": "好臭",
+                    "checked": false,
+                    "checkbox": true
+                }
+            ]
+        },
         "對方的私密處很臭": {
             "id": "53b972c8-f342-444f-96d0-71b8a052a595",
             "argument": [

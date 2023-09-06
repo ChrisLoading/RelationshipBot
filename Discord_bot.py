@@ -109,7 +109,7 @@ class BotClient(discord.Client):
             logging.debug("人類說：{}".format(msgSTR))
             
 # ##########初次對話：這裡是 keyword trigger 的。
-            if any(i in msgSTR.lower() for i in ["哈囉","嗨","你好","妳好","您好","hi","hello","yo","安","hey","在嘛","在嗎","嘿","sup"]):
+            if any(i in msgSTR.lower() for i in ["哈囉","嗨","你好","妳好","您好","hi","hello","yo","安","hey","在嘛","在嗎","嘿","sup"]) and all(i not in msgSTR.lower() for i in ["晚安", "you"]):
                 #有講過話(判斷對話時間差)
                 if message.author.id in self.mscDICT.keys():
                     timeDIFF = datetime.now() - self.mscDICT[message.author.id]["updatetime"]
@@ -122,7 +122,7 @@ class BotClient(discord.Client):
                         if self.mscDICT[message.author.id]["hi_count"] < 4:
                             replySTR = "你剛剛才跟我嗨過喔~你忘記了嗎?"
                             self.mscDICT[message.author.id]["hi_count"] += 1
-                        else :
+                        else:
                             replySTR = "你煩不煩啊？有甚麼問題快問啦！😠你是被另一伴說金魚腦所以才來這裡取暖是不是？？？🤨"
                 #沒有講過話(給他一個新的template)
                 else:

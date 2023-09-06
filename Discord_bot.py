@@ -55,13 +55,13 @@ class BotClient(discord.Client):
         清空與 messageAuthorID 之間的對話記錄
         '''
         templateDICT = {    "id": messageAuthorID,
-                             "updatetime" : datetime.now(),
-                             "latestQuest": "",
-                             "false_count" : 0,
-                             "hi_count" : 0,
-                             "bye_count": 0,
-                             "thx_count": 0,
-                             "Q_count" : 0
+                            "updatetime" : datetime.now(),
+                            "latestQuest": "",
+                            "false_count" : 0,
+                            "hi_count" : 0,
+                            "bye_count": 0,
+                            "thx_count": 0,
+                            "Q_count" : 0
         }
         return templateDICT
     
@@ -130,7 +130,7 @@ class BotClient(discord.Client):
                     replySTR = "嗨嗨~我是感情小助理🙂~\n可以協助您解決感情世界的疑難雜症~\n您可以試著問我有關男女朋友之間的煩惱\n"
                     self.mscDICT[message.author.id]["hi_count"] += 1
             
-            elif msgSTR.lower() in ["掰","掰掰","bye","晚安","goodbye","掰囉","byebye","bye bye"]:
+            elif msgSTR.lower() in ["掰","掰掰","bye","晚安","goodbye","掰囉","byebye","bye bye","good night","gn","night"]:
                 if message.author.id not in self.mscDICT.keys() or self.mscDICT[message.author.id]["Q_count"] == 0:
                     replySTR = "你甚麼都還沒問到欸?真的要走了?" 
                 else :

@@ -79,39 +79,6 @@
                     "checkbox": true
                 }
             ]
-        },
-        "愛居": {
-            "id": "9c00d082-b3e6-4d53-971c-78140daf7075",
-            "argument": [
-                {
-                    "pos": "VerbP",
-                    "lexy": [
-                        {
-                            "text": "達隘",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "達韻",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "撒隆",
-                            "level": "word2vec",
-                            "checked": false
-                        },
-                        {
-                            "text": "提安",
-                            "level": "word2vec",
-                            "checked": false
-                        }
-                    ],
-                    "text": "愛居",
-                    "checked": false,
-                    "checkbox": false
-                }
-            ]
         }
     },
     "alias": {},

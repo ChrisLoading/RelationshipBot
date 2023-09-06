@@ -130,8 +130,8 @@
 ## Loki啟用說明
 1. 註冊並登入[卓騰語言科技AI](https://api.droidtown.co/login/)
 2. 點選 `Loki` -> `開始啟用Loki` 進入Loki控制台
-3. 輸入專案名稱並點選 `建立專案`，並依序建立family、life_style ... sex、pingying_preprocessing，共7個專案
-4. 進入設立完成之專案family
+3. 輸入專案名稱並點選 `建立專案`，並依序建立**family、life_style ... sex、pingying_preprocessing**，共7個專案
+4. 進入設立完成之專案**family**
 5. 點擊 `選擇檔案` ->選擇 `.ref` 檔->點選 `讀取意圖` 依序匯入目錄**family_ref** 中所有的`.ref`檔案
 6. 點選畫面左上角房子圖示，回到 Loki控制台，點選 `複製` 專案金鑰
 7. 在目錄 **family** 底下創建檔案 `account.info` ，並輸入以下內容

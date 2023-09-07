@@ -198,7 +198,7 @@
 + [Chris Chou](https://github.com/ChrisLoading)
 + [Emily Li](https://github.com/emilyli0521)
 
-若您有興趣了解更多，或是遇到任何問題都可以[點此聯絡](https://mail.google.com/mail/?view=cm&fs=1&to=brian098091@gmail.com,tsunghaochou@gmail.com,a0930591669@gmail.com)我們
+若您有興趣了解更多，或是遇到任何問題，請[點此聯絡](https://mail.google.com/mail/?view=cm&fs=1&to=brian098091@gmail.com,tsunghaochou@gmail.com,a0930591669@gmail.com)我們
 
 ## 參考資料
 + [感情｜天下雜誌](https://www.cw.com.tw/tag/%E6%84%9F%E6%83%85?page=2)

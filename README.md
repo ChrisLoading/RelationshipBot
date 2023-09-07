@@ -180,7 +180,7 @@
 ![ending image](https://cdn.discordapp.com/attachments/1149239616357027942/1149253616553689098/image.png)
 
 ## 資源
-**Droidtown Youtube 搭配 Droidtown GitHub服用，效果佳！**
+**Droidtown Youtube 搭配 Droidtown GitHub服用，效果最佳！**
 + [Droidtown Official Youtube Channel](https://www.youtube.com/@Droidtown) **Must See!**
 + [Droidtown free resources(GitHub)](https://github.com/Droidtown/NLP_TrainingLab)
 + [Droidtown document](https://api.droidtown.co/document/#Articut)

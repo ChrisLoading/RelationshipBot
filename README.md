@@ -6,8 +6,10 @@
 - [Loki啟用說明](##Loki啟用說明)
 - [Discord Bot建置](##DiscordBot建置)
 - [使用者互動說明](##使用者互動說明)
+- [資源](##資源)
 - [作者](##作者)
 - [參考資料](##參考資料)
+- [作者](##作者)
 ## Bot介紹 
 談戀愛總是遇到相處上的難題嗎？感情小助理 RelationshipBot 是一款可以提供您和男/女朋友相處建議的小助手，
 就像您最好朋友那樣，只要輸入您想問的問題，BOT就能透過NLU的LOKI理解您的煩惱，並為您提供方向，讓您和另一半相處起來更輕鬆愉快！
@@ -186,7 +188,7 @@
 
 ## 資源
 **Droidtown Youtube 搭配 Droidtown GitHub服用，效果最佳！**
-+ [Droidtown Official Youtube Channel](https://www.youtube.com/@Droidtown) **Must See!**
++ [Droidtown Official Youtube Channel](https://www.youtube.com/@Droidtown/playlists) **`Must See!`**
 + [Droidtown free resources(GitHub)](https://github.com/Droidtown/NLP_TrainingLab)
 + [Droidtown document](https://api.droidtown.co/document/#Articut)
 + [Droidtown products](https://api.droidtown.co/)

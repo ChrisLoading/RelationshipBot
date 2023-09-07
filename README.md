@@ -9,7 +9,8 @@
 - [參考資料](##參考資料)
 - [作者](##作者)
 ## Bot介紹 
-
+談戀愛總是遇到相處上的難題嗎？感情小助理 RelationshipBot 是一款可以提供您和男/女朋友相處建議的小助手，
+就像您最好朋友那樣，只要輸入您想問的問題，BOT就能透過NLU的LOKI理解您的煩惱，並為您提供方向，讓您和另一半相處起來更輕鬆愉快！
 
 ## 專案目錄
 ```
@@ -164,6 +165,19 @@
 ## 使用者互動說明
 完成上述程序後，執行 `python3 Discord_bot.py` 即可開始與 Bot 互動<br><br>
 <互動示例><br>
+1. Tag RelationshipBot. 跟他打聲招呼吧！<br><br>
+![say Hi image](https://cdn.discordapp.com/attachments/1149239616357027942/1149242784860094527/image.png)
+
+2. Tag RelationshipBot. 跟他聊聊在感情方面遇到的「家庭/金錢/生活習慣/性格/忠誠/性事」六大類問題吧！<br><br>
+![ask relationshipBot image](https://cdn.discordapp.com/attachments/1149239616357027942/1149245208807088180/image.png)
+<br><br>
+![Ask RelationshipBot image](https://cdn.discordapp.com/attachments/1149239616357027942/1149245213940908073/image.png)
+
+3. Tag RelationshipBot. Oops!別擔心，他會提示你的！<br><br>
+![prompt image](https://cdn.discordapp.com/attachments/1149239616357027942/1149249207216115742/image.png)
+
+4. Tag RelationshipBot. 完美的結尾🤗<br><br>
+![ending image](https://cdn.discordapp.com/attachments/1149239616357027942/1149253616553689098/image.png)
 
 ## 參考資料
 

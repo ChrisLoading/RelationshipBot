@@ -194,9 +194,11 @@
 
 
 ## 作者
-+ [Brian Ding](https://github.com/brian098091)｜[Contact Me](mailto:brian098091@gmail.com)
-+ [Chris Chou](https://github.com/ChrisLoading)｜[Contact Me](tsunghaochou@gmail.com)
-+ [Emily Li](https://github.com/emilyli0521)｜[Contact Me](emilyli0521@gmail.com)
++ [Brian Ding](https://github.com/brian098091)
++ [Chris Chou](https://github.com/ChrisLoading)
++ [Emily Li](https://github.com/emilyli0521)
+
+若您有興趣了解更多，或是遇到任何問題都可以[點此聯絡](https://mail.google.com/mail/?view=cm&fs=1&to=brian098091@gmail.com,tsunghaochou@gmail.com,emilyli0521@gmail.com)我們
 
 ## 參考資料
 + [感情｜天下雜誌](https://www.cw.com.tw/tag/%E6%84%9F%E6%83%85?page=2)

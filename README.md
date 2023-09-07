@@ -183,7 +183,7 @@
 
 ## 資源
 **Droidtown Youtube 搭配 Droidtown GitHub服用，效果最佳！**
-+ [Droidtown Official Youtube Channel](https://www.youtube.com/@Droidtown) **`Must See!`**
++ [Droidtown Official Youtube Channel](https://www.youtube.com/@Droidtown/playlists) **`Must See!`**
 + [Droidtown free resources(GitHub)](https://github.com/Droidtown/NLP_TrainingLab)
 + [Droidtown document](https://api.droidtown.co/document/#Articut)
 + [Droidtown products](https://api.droidtown.co/)

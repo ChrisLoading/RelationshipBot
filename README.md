@@ -194,9 +194,9 @@
 
 
 ## 作者
-+ [Brian Ding](https://github.com/brian098091)｜
-+ [Chris Chou](https://github.com/ChrisLoading)｜<tsunghaochou@gmail.com>
-+ [Emily Li](https://github.com/emilyli0521)｜
++ [Brian Ding](https://github.com/brian098091)｜[Contact Me](tsunghaochou@gmail.com)
++ [Chris Chou](https://github.com/ChrisLoading)｜[Contact Me](tsunghaochou@gmail.com)
++ [Emily Li](https://github.com/emilyli0521)｜[Contact Me](emilyli0521@gmail.com)
 
 ## 參考資料
 + [感情｜天下雜誌](https://www.cw.com.tw/tag/%E6%84%9F%E6%83%85?page=2)

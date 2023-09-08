@@ -144,7 +144,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]個性不[好]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ["糟","糟糕","差","很差"]:
+                resultDICT["response"] = getResponse(utterance, args)        
         else:
             # write your code here
             pass

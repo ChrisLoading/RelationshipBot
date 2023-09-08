@@ -202,4 +202,7 @@
 
 ## 參考資料
 + [感情｜天下雜誌](https://www.cw.com.tw/tag/%E6%84%9F%E6%83%85?page=2)
-+ [Dcard 感情版](https://www.dcard.tw/f/relationship)
++ [兩性關係｜天下雜誌](https://www.cw.com.tw/article/5019816)
++ [感情版｜Dcard ](https://www.dcard.tw/f/relationship)
++ [兩性關係｜Bella](https://www.bella.tw/articles/sexuality/29173)
++ [兩性愛情｜COSMOPOLITAN ](https://www.dcard.tw/f/relationship)

@@ -109,7 +109,7 @@ class BotClient(discord.Client):
             logging.debug("人類說：{}".format(msgSTR))
             
 # ##########初次對話：這裡是 keyword trigger 的。
-            if any(i in msgSTR.lower() for i in ["哈囉","嗨","你好","妳好","您好","hi","hello","yo","安","hey","在嘛","在嗎","嘿","sup"]) and all(i not in msgSTR.lower() for i in ["晚安", "you"]):
+            if any(i in msgSTR.lower() for i in ["哈囉","嗨","你好","妳好","您好","hi","hello","yo","安","hey","在嘛","在嗎","在嬤","嘿","sup"]) and all(i not in msgSTR.lower() for i in ["晚安", "you"]):
                 #有講過話(判斷對話時間差)
                 if message.author.id in self.mscDICT.keys():
                     timeDIFF = datetime.now() - self.mscDICT[message.author.id]["updatetime"]
@@ -130,7 +130,7 @@ class BotClient(discord.Client):
                     replySTR = "嗨嗨~我是感情小助理🙂~\n可以協助您解決感情世界的疑難雜症~\n您可以試著問我有關男女朋友之間的煩惱\n"
                     self.mscDICT[message.author.id]["hi_count"] += 1
             
-            elif any(i in msgSTR.lower() for i in ["掰","bye","晚安","gn","night"]):
+            elif any(i in msgSTR.lower() for i in ["掰","bye","晚安","gn","night","滾"]):
                 if message.author.id not in self.mscDICT.keys() or self.mscDICT[message.author.id]["Q_count"] == 0:
                     replySTR = "你甚麼都還沒問到欸?真的要走了?" 
                 else :

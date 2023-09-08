@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 """
-    Loki module for habit
+    Loki module for trait
 
     Input:
         inputSTR      str,
@@ -19,7 +19,7 @@ from random import sample
 import json
 import os
 
-DEBUG_habit = True
+DEBUG_trait = True
 CHATBOT_MODE = True
 
 userDefinedDICT = {}
@@ -31,14 +31,14 @@ except Exception as e:
 responseDICT = {}
 if CHATBOT_MODE:
     try:
-        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_habit.json"), encoding="utf-8"))
+        responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_trait.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
-    if DEBUG_habit:
-        print("[habit] {} ===> {}".format(inputSTR, utterance))
+    if DEBUG_trait:
+        print("[trait] {} ===> {}".format(inputSTR, utterance))
 
 def getResponse(utterance, args):
     resultSTR = ""
@@ -50,350 +50,329 @@ def getResponse(utterance, args):
 
 def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     debugInfo(inputSTR, utterance)
-    if utterance == "[對方][一直]打電動[都]不陪[我]":
+    if utterance == "[天天]發牢騷":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][一直]說八卦[好吵]":
+    if utterance == "[女友]有很強的佔有[慾]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][常常]晚睡":
+    if utterance == "[對方][很]喜歡抱怨":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][很常]吃不完":
+    if utterance == "[對方][很]愛聊八卦":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][衛生]習慣[很糟]":
+    if utterance == "[對方][很]愛聊天":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][衣服][襪子][都]亂丟":
+    if utterance == "[對方][很]愛聊有的沒有的":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][衣服]丟得[滿地][都]是":
+    if utterance == "[對方][根本]不了解[我]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都][半夜]不睡覺":
+    if utterance == "[對方][總是]心不在焉":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]不做家事":
+    if utterance == "[對方][超]囉嗦":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]很晚[才]睡覺":
+    if utterance == "[對方][超級]黏[我]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]要三更半夜才睡":
+    if utterance == "[對方]什麼[都]做不[好]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]要很晚[才]睡":
+    if utterance == "[對方]佔有[慾]極強":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][都]要很晚睡":
+    if utterance == "[對方]個性[小氣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方][點][很多]餐[都]不吃完":
+    if utterance == "[對方]個性[很差]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]上廁所不掀[馬桶蓋]":
+    if utterance == "[對方]個性不[好]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]上廁所不鎖門":
+    if utterance == "[對方]像老媽子":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]上廁所不關門":
+    if utterance == "[對方]和[我]喜歡做的[事]不[一樣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]不愛整理[房間]":
+    if utterance == "[對方]和[我]興趣不[一樣]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]不重視[個人][衛生]":
+    if utterance == "[對方]對[我][超級]依賴":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]不陪[我]":
+    if utterance == "[對方]對每個細節[都][很]在意":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]去哪[都]不講":
+    if utterance == "[對方]很小氣":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]嘴[臭]":
+    if utterance == "[對方]愛管東管西":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]囉哩八唆想跟[他]分手":
+    if utterance == "[對方]愛計較":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]回家[衣服][都]亂丟":
+    if utterance == "[對方]提分手":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]堅持睡覺不開[冷氣]":
+    if utterance == "[對方]有老媽子的[特質]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]很吵":
+    if utterance == "[對方]超煩人":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]愛亂丟垃圾":
+    if utterance == "[對方]超級麻煩":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]愛吃垃圾食物":
+    if utterance == "[對方]超黏[我]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]打呼[很大聲]":
+    if utterance == "[我]付出得比對[方]多":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]打呼[超大聲]":
+    if utterance == "[我]和[男友]三觀不合":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]打電動[都]不陪[我]":
+    if utterance == "[我]在[這段][感情][中]貢獻的比對[方]多":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]打電動打到很[晚都]不陪[我]":
+    if utterance == "[我們][很多][方面][都][不太]合":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]生活習慣很差":
+    if utterance == "[我們]三觀不合":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]睡覺打呼超吵的":
+    if utterance == "[我們]相處得好累":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]習慣很糟":
+    if utterance == "[男友]占有[慾]很強":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]腳很臭":
+    if utterance == "[男友]很小氣":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[對方]超髒的":
+    if utterance == "[自己]在各個[方面][都]做得不太好":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我]習慣早起[對方]喜歡晚睡":
+    if utterance == "什麼[都]要和[我]斤斤計較":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我們]作息不[一致]":
+    if utterance == "什麼[都]要計較":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[我們]的休息[時間]無法保持[一致]":
+    if utterance == "付出勝過[對方]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[晚上][都]不睡":
+    if utterance == "在[一起]時[心情][無比]沮喪":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[每天][視訊]好煩":
+    if utterance == "與[對方]交往讓[我]感到非常不[舒適]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[每天][都]要打電話":
+    if utterance == "覺得[自己]什麼[都]不[好]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[每天]講[電話]很沒[必要]":
+    if utterance == "越來[越][容易]看到[對方]的[缺點]":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[每天]起床與睡覺的[時間]不[一致]":
+    if utterance == "跟[對方]價值觀不合":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "[男友]很吵":
+    if utterance == "跟[對方]價值觀背道而馳":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
 
-    if utterance == "不喜歡[每天]講[電話]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "不想[天天]講電話":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "不想[每天][視訊]":
-        if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
-        else:
-            # write your code here
-            pass
-
-    if utterance == "睡覺打呼超吵":
+    if utterance == "跟[男友]價值觀背道而馳":
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:

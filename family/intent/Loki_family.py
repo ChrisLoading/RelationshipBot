@@ -161,7 +161,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方][單親]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] == "單親":
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -287,7 +288,8 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]是[單親][家庭]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ["單親","隔代"]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass
@@ -322,7 +324,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]的[媽媽][很]討厭[我]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass

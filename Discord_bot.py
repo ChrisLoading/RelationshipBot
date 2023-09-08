@@ -143,7 +143,7 @@ class BotClient(discord.Client):
                     else :
                         replySTR = "是要掰幾次啦???我都不用休息???不要在這裡浪費生命好不好😠"
                         
-            elif any(i in msgSTR.lower() for i in ["謝","thank","thx"]):
+            elif any(i in msgSTR.lower() for i in ["謝謝","thank","thx","感謝","謝啦"]):
                 if message.author.id not in self.mscDICT.keys() or self.mscDICT[message.author.id]["Q_count"] == 0 :
                     replySTR = "雖然不太清楚我幫了你甚麼，但不客氣~😎" 
                 else :
@@ -155,7 +155,7 @@ class BotClient(discord.Client):
                         self.mscDICT[message.author.id]["thx_count"] += 1
                     else :
                         replySTR = "不 客 氣。"
-            elif any(i in msgSTR.lower() for i in ["對不起","抱歉","sor","拍謝","我錯了","我的錯","不要生氣啦","bad"]):
+            elif any(i in msgSTR.lower() for i in ["抱歉","sor","拍謝","我錯了","我的錯","不要生氣啦"]):
                 if  message.author.id not in self.mscDICT.keys() or (self.mscDICT[message.author.id]["false_count"] < 4 and self.mscDICT[message.author.id]["bye_count"] < 4 and self.mscDICT[message.author.id]["thx_count"] < 4 and self.mscDICT[message.author.id]["hi_count"] < 4) :
                     replySTR = "怎麼突然道歉了?你沒做錯甚麼事啊~"
                 else:

@@ -694,21 +694,22 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "沒[錢]養[小孩]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[1] in ["小孩","孩子","女兒","兒子"]:
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "約[見面]誰付錢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "約[見面]誰要付錢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -716,7 +717,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
     if utterance == "覺得[我]是[一直]花[他]錢的[女生]":
         if CHATBOT_MODE:
             if args[0] in ["我"]:
-                resultDICT["response"] = getResponse(utterance, args)
+                resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass

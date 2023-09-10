@@ -682,7 +682,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "怎麼跟[對方][家人][好好]相處":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -740,14 +740,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "跟[對方][家人]相處很不[自在]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "跟[對方]家庭[背景]存在[明顯][差異]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass

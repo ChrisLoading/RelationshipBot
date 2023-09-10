@@ -476,14 +476,14 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]經濟[狀況]不[好]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[對方]薪水[不高]":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
@@ -537,7 +537,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[我]賺的是[我][男友][兩倍]":
         if CHATBOT_MODE:
-            if args[0] in ["我"] and args[1] in ["我"]:
+            if args[0] in ["我","自己"] and args[1] in ["我","自己"]:
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
@@ -559,21 +559,22 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[第一次][見面]誰付錢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "[第一次][見面]誰要付錢":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
             pass
 
     if utterance == "不想讓[對方]覺得[都]是[他]在負擔":
         if CHATBOT_MODE:
-            resultDICT["response"] = getResponse(utterance, args)
+            if args[2] in ["他","她","對方"] or args[2] == args[0]:
+                resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
             pass

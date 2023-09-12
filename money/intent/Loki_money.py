@@ -110,7 +110,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方][一直]跟[我]借錢":
         if CHATBOT_MODE:
-            if args[2] in argDICT["me"]:
+            if args[2] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -174,7 +174,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方][只]看中[我]的[財力]":
         if CHATBOT_MODE:
-            if args[2] in argDICT["me"]:
+            if args[2] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
@@ -246,7 +246,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]不願意跟[我]aa":
         if CHATBOT_MODE:
-            if args[1] in argDICT["me"]:
+            if args[1] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -499,7 +499,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]要[我]買[房子]":
         if CHATBOT_MODE:
-            if args[1] in argDICT["me"]:
+            if args[1] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
@@ -507,7 +507,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "[對方]要[我]買房":
         if CHATBOT_MODE:
-            if args[1] in argDICT["me"]:
+            if args[1] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -618,7 +618,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "因為[我]沒在用網路吃到飽":
         if CHATBOT_MODE:
-            if args[0] in argDICT["me"]:
+            if args[0] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -626,7 +626,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "因為[我]沒有網路吃到飽":
         if CHATBOT_MODE:
-            if args[0] in argDICT["me"]:
+            if args[0] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args)
         else:
             # write your code here
@@ -727,7 +727,7 @@ def getResult(inputSTR, utterance, args, resultDICT, refDICT):
 
     if utterance == "覺得[我]是[一直]花[他]錢的[女生]":
         if CHATBOT_MODE:
-            if args[0] in argDICT["me"]:
+            if args[0] in argDICT["myself"]:
                 resultDICT["response"] = getResponse(utterance, args).format(*args)
         else:
             # write your code here
